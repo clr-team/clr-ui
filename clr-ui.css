@@ -10701,6 +10701,9 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   .datagrid-compact .datagrid-foot .datagrid-foot-select.checkbox input[type='checkbox'] + label::before, .datagrid-compact .datagrid-foot .datagrid-foot-select.checkbox input[type='checkbox'] + label::after {
     top: 0.11111rem; }
 
+.empty-style {
+  border: 2px solid deeppink; }
+
 .datagrid-cell-width-zero {
   border: 0 !important;
   padding: 0 !important;

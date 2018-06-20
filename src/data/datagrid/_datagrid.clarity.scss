@@ -892,6 +892,11 @@
     }
   }
 
+  // TODO make sure this is deleted, test for publishing
+  .empty-style {
+    border: 2px solid deeppink;
+  }
+
   // Needed for the hack to test if a cell has a user-defined width
   .datagrid-cell-width-zero {
     // Much zero. Such !important. Wow.
