@@ -834,6 +834,10 @@
         margin-top: -0.125rem;
         margin-bottom: -1px;
       }
+      .test2345 {
+        // Test class added to simulate a pr change request in scss
+        border: 24px solid deeppink;
+      }
     }
     .datagrid-expandable-caret {
       .spinner {
@@ -890,11 +894,6 @@
         }
       }
     }
-  }
-
-  // TODO make sure this is deleted, test for publishing
-  .empty-style {
-    border: 2px solid deeppink;
   }
 
   // Needed for the hack to test if a cell has a user-defined width

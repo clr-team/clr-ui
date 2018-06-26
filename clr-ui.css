@@ -10658,6 +10658,9 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   margin-top: -0.125rem;
   margin-bottom: -1px; }
 
+.datagrid-compact .datagrid-cell .test2345 {
+  border: 24px solid deeppink; }
+
 .datagrid-compact .datagrid-expandable-caret .spinner {
   margin-top: 0.125rem; }
 
@@ -10700,9 +10703,6 @@ _:-ms-input-placeholder .clr-treenode-content .label,
     outline-offset: -0.166667rem; }
   .datagrid-compact .datagrid-foot .datagrid-foot-select.checkbox input[type='checkbox'] + label::before, .datagrid-compact .datagrid-foot .datagrid-foot-select.checkbox input[type='checkbox'] + label::after {
     top: 0.11111rem; }
-
-.empty-style {
-  border: 2px solid deeppink; }
 
 .datagrid-cell-width-zero {
   border: 0 !important;
