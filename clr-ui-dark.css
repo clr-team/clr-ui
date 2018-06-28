@@ -8570,7 +8570,7 @@ _:-ms-input-placeholder .progress-block > label,
   width: 8rem;
   min-width: 8rem; }
 
-.clr-form-compact .clr-form-control.row > .clr-control-label {
+.clr-form-compact .clr-form-control.clr-row > .clr-control-label {
   width: auto;
   min-width: auto; }
 
@@ -8742,7 +8742,7 @@ _:-ms-input-placeholder .progress-block > label,
 
 .clr-input-wrapper {
   white-space: nowrap;
-  height: 1rem; }
+  max-height: 1rem; }
 
 .clr-input {
   -webkit-appearance: none;
