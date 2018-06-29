@@ -3795,6 +3795,9 @@ html {
 .alert-icon-wrapper {
   -ms-flex: 0 0 1.041667rem;
   flex: 0 0 1.041667rem;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
   padding-top: 0.041667rem;
   height: 0.75rem; }
 
@@ -3934,7 +3937,6 @@ html {
   margin: 0;
   border: none;
   border-radius: 0;
-  max-height: 4rem;
   overflow-y: auto;
   background: #007cbb;
   color: #fff;
@@ -3978,8 +3980,10 @@ html {
       margin: 0; }
   .alert-app-level .alert-item > span,
   .alert-app-level .alert-text {
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto; }
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto; }
+  .alert-app-level .alert-icon-wrapper {
+    margin-top: 0.125rem; }
   .alert-app-level .close {
     color: #fff;
     opacity: 0.8;
