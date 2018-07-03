@@ -8501,6 +8501,9 @@ _:-ms-input-placeholder .progress-block > label,
 .tooltip clr-icon > svg {
   pointer-events: none; }
 
+.tooltip-trigger:focus + .tooltip-content {
+  visibility: visible; }
+
 .clr-form-control {
   margin-top: 1rem;
   display: -ms-flexbox;
