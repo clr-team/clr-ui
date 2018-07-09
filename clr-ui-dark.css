@@ -9982,6 +9982,8 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
     height: 0;
     border-top: 0.375rem solid #006a91;
     border-right: 0.375rem solid transparent; }
+  .stack-view .stack-block-label {
+    outline: none; }
   .stack-view .stack-block-label,
   .stack-view .stack-block-content {
     padding: 0.25rem 0.5rem;
@@ -10003,6 +10005,11 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
       width: 0.416667rem;
       margin: 0.291667rem 0.25rem 0 0;
       text-align: center; }
+  .stack-view .stack-block-caret {
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-right: 0.125rem;
+    fill: #9a9a9a; }
   .stack-view .stack-block-content {
     color: #adbbc4;
     -ms-flex: 1 1 auto;
@@ -10040,7 +10047,8 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
   .stack-view .stack-block-expandable > .stack-block-label,
   .stack-view .stack-block-expandable > .stack-block-content {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; }
-  .stack-view .stack-block-expandable:hover:not(.stack-block-expanded) > .stack-block-label,
+  .stack-view .stack-block-expandable.on-focus:not(.stack-block-expanded) > .stack-block-label,
+  .stack-view .stack-block-expandable.on-focus:not(.stack-block-expanded) > .stack-block-content, .stack-view .stack-block-expandable:hover:not(.stack-block-expanded) > .stack-block-label,
   .stack-view .stack-block-expandable:hover:not(.stack-block-expanded) > .stack-block-content {
     background-color: #324f61; }
   .stack-view .stack-block-expanded > .stack-block-label::before {
@@ -10079,6 +10087,12 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
   .modal .stack-view {
     height: 55vh;
     margin-bottom: 0; }
+
+.stack-view clr-stack-block.stack-block-expandable .stack-block-label::before {
+  content: none; }
+
+.stack-view .stack-children clr-stack-block .stack-block-label {
+  padding-left: 1.5rem; }
 
 .clr-tree-node {
   display: block; }
