@@ -11256,13 +11256,12 @@ button.nav-link {
     min-width: 1rem;
     margin: 0;
     padding: 0;
-    color: #9a9a9a;
-    outline: none; }
+    color: #737373; }
     .signpost .signpost-action clr-icon {
       width: 1rem;
       height: 1rem; }
     .signpost .signpost-action:hover, .signpost .signpost-action.active {
-      color: #007cbb; }
+      color: #0065ab; }
   .signpost .signpost-content-header button clr-icon {
     width: 0.666667rem;
     height: 0.666667rem; }
