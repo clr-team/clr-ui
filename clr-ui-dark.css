@@ -8812,8 +8812,7 @@ _:-ms-input-placeholder .progress-block > label,
   background-size: 0% 100%;
   transition: background-size 0.2s ease;
   margin-right: 1rem;
-  max-width: calc(100% - 1rem);
-  color: #000; }
+  max-width: calc(100% - 1rem); }
   .clr-input-group:focus, .clr-input-group.clr-focus {
     border-bottom: 1px solid #0094d2;
     background-size: 100% 100%; }
@@ -8823,12 +8822,23 @@ _:-ms-input-placeholder .progress-block > label,
     margin-right: 0;
     max-width: 100%; }
     .clr-input-group .clr-input:not([readonly]):focus {
-      background-size: 0%; }
+      background-size: 0%;
+      border: 0; }
   .clr-input-group select {
     border: none; }
   .clr-input-group .clr-input-group-icon-action {
     color: #0094d2;
     cursor: pointer; }
+
+.clr-error .clr-input-group {
+  border-bottom-color: #c92100;
+  background: linear-gradient(to bottom, transparent 95%, #c92100 95%) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.2s ease;
+  margin-right: 0.25rem; }
+  .clr-error .clr-input-group:focus, .clr-error .clr-input-group.clr-focus {
+    border-bottom: 1px solid #c92100;
+    background-size: 100% 100%; }
 
 .clr-radio-wrapper {
   position: relative; }
