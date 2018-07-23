@@ -9373,7 +9373,8 @@ form,
       .form .form-group.row > [class*='col-'] > label.required:after,
       .form .form-group.row > [class*='col-'] > span.required:after {
         content: '*';
-        font-size: 1.1em;
+        font-size: 0.58479532rem;
+        line-height: 0.5rem;
         color: #c92100;
         margin-left: 0.25rem; }
     form .form-group .form-control,
