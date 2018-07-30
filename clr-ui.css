@@ -10101,6 +10101,9 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap; }
 
+.datagrid-row-clickable {
+  cursor: pointer; }
+
 
 .datagrid-column,
 .datagrid .datagrid-head .datagrid-row-actions {
