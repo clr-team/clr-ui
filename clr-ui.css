@@ -10878,6 +10878,19 @@ _:-ms-input-placeholder .clr-treenode-content .label,
     opacity: 1;
     transform: translate(0, 0); }
 
+.offscreen-focus-rebounder {
+  position: fixed !important;
+  border: none !important;
+  height: 1px !important;
+  width: 1px !important;
+  left: 0px !important;
+  top: -1px !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  padding: 0 !important;
+  margin: 0 0 -1px 0 !important;
+  visibility: visible !important; }
+
 @media screen {
   section[aria-hidden='true'] {
     display: none; } }
