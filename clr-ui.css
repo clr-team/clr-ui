@@ -8745,7 +8745,6 @@ _:-ms-input-placeholder .progress-block > label,
   right: 1.25rem; }
 
 .clr-multiselect-wrapper {
-  margin-top: 0.25rem;
   display: -ms-flexbox;
   display: flex; }
   .clr-multiselect-wrapper .clr-validate-icon {
@@ -8767,6 +8766,9 @@ select[size] {
   select[size] option {
     padding: 0.125rem 0.25rem;
     color: #000; }
+
+.clr-error select[multiple] {
+  border-color: #c92100; }
 
 .clr-form-control-disabled .clr-select.disabled {
   opacity: 0.5;
