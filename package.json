@@ -1,19 +1,21 @@
 {
-    "name": "@clr/ui",
-    "version": "0.12.6",
-    "description": "CSS for Clarity",
-    "homepage": "https://vmware.github.io/clarity/",
-    "repository" : {
-        "type" : "git",
-        "url" : "git@github.com:vmware/clarity.git"
-    },
-    "peerDependencies": {
-        "@clr/icons": "0.12.6",
-        "bootstrap": "4.0.0-alpha.5"
-    },
-    "author": "clarity",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/vmware/clarity/issues"
-    }
+  "name": "@clr/ui",
+  "version": "0.13.0-beta.1",
+  "description": "CSS for Clarity",
+  "homepage": "https://vmware.github.io/clarity/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vmware/clarity.git"
+  },
+  "peerDependencies": {
+    "@clr/icons": "0.13.0-beta.1"
+  },
+  "optionalDependencies": {
+    "bootstrap": "4.0.0-alpha.5"
+  },
+  "author": "clarity",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vmware/clarity/issues"
+  }
 }
