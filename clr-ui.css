@@ -7489,6 +7489,7 @@ header,
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
+  display: block;
   background-color: #eee;
   border: none;
   color: #007cbb;
