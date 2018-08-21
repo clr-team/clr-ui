@@ -2932,6 +2932,23 @@ html {
   font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   font-size: 24px; }
 
+pre {
+  margin: 0.5rem 0; }
+
+pre {
+  border: 1px solid #ccc;
+  max-height: 15rem;
+  border-radius: 0.125rem;
+  overflow: auto; }
+
+pre code {
+  white-space: pre; }
+
+code.clr-code {
+  color: #c92100;
+  padding: 0;
+  background: transparent; }
+
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -4299,32 +4316,6 @@ html {
   .card .radio.btn label,
   .card .radio-inline.btn label {
     display: inline-block; } }
-
-pre,
-pre[class*='language-'] {
-  margin: 0.5rem 0; }
-
-pre {
-  border: 1px solid #ccc;
-  max-height: 15rem;
-  border-radius: 0.125rem;
-  overflow: auto; }
-
-pre code {
-  white-space: pre; }
-
-:not(pre) > code[class*='language-'],
-pre[class*='language-'],
-pre,
-code[class*='language-'] {
-  font-family: Consolas, Monaco, Courier, monospace !important;
-  line-height: 1rem;
-  padding: 0; }
-
-code.clr-code {
-  color: #c92100;
-  padding: 0;
-  background: transparent; }
 
 .dropdown-menu .dropdown-header, .dropdown-menu .btn,
 .dropdown-menu .btn-secondary,
