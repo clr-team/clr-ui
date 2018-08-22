@@ -8827,7 +8827,8 @@ _:-ms-input-placeholder .progress-block > label,
     background-size: 100% 100%; }
 
 .clr-radio-wrapper {
-  position: relative; }
+  position: relative;
+  line-height: 1rem; }
   .clr-radio-wrapper .clr-control-label {
     font-weight: normal;
     display: block; }
