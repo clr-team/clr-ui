@@ -6467,9 +6467,12 @@ header,
       .header .header-nav .nav-link:hover,
       .header .header-nav .nav-link:active {
         text-decoration: none; }
-      header .header-nav .nav-link:hover,
-      .header .header-nav .nav-link:hover {
+      header .header-nav .nav-link:enabled:hover,
+      .header .header-nav .nav-link:enabled:hover {
         opacity: 1; }
+      header .header-nav .nav-link:disabled,
+      .header .header-nav .nav-link:disabled {
+        cursor: not-allowed; }
       header .header-nav .nav-link .fa,
       header .header-nav .nav-link .nav-icon,
       header .header-nav .nav-link .nav-text, header .header-nav .nav-link.nav-icon, header .header-nav .nav-link.nav-text,
@@ -6553,11 +6556,16 @@ header,
     padding: 0;
     color: #fafafa;
     opacity: 0.65; }
-    header .search-box:hover,
-    header .search:hover,
-    .header .search-box:hover,
-    .header .search:hover {
+    header .search-box:enabled:hover,
+    header .search:enabled:hover,
+    .header .search-box:enabled:hover,
+    .header .search:enabled:hover {
       opacity: 1; }
+    header .search-box:disabled,
+    header .search:disabled,
+    .header .search-box:disabled,
+    .header .search:disabled {
+      cursor: not-allowed; }
     header .search-box > .nav-icon,
     header .search > .nav-icon,
     .header .search-box > .nav-icon,
@@ -6646,11 +6654,16 @@ header,
       .header .header-actions .nav-link:hover,
       .header .header-actions .nav-link:active {
         text-decoration: none; }
-      header .settings .nav-link:hover,
-      header .header-actions .nav-link:hover,
-      .header .settings .nav-link:hover,
-      .header .header-actions .nav-link:hover {
+      header .settings .nav-link:enabled:hover,
+      header .header-actions .nav-link:enabled:hover,
+      .header .settings .nav-link:enabled:hover,
+      .header .header-actions .nav-link:enabled:hover {
         opacity: 1; }
+      header .settings .nav-link:disabled,
+      header .header-actions .nav-link:disabled,
+      .header .settings .nav-link:disabled,
+      .header .header-actions .nav-link:disabled {
+        cursor: not-allowed; }
       header .settings .nav-link .fa,
       header .settings .nav-link .nav-icon,
       header .settings .nav-link .nav-text, header .settings .nav-link.nav-icon, header .settings .nav-link.nav-text,
@@ -6732,11 +6745,16 @@ header,
       outline-offset: -0.208333rem;
       color: #fafafa;
       opacity: 0.65; }
-      header .settings > .dropdown > .dropdown-toggle:hover,
-      header .header-actions > .dropdown > .dropdown-toggle:hover,
-      .header .settings > .dropdown > .dropdown-toggle:hover,
-      .header .header-actions > .dropdown > .dropdown-toggle:hover {
+      header .settings > .dropdown > .dropdown-toggle:enabled:hover,
+      header .header-actions > .dropdown > .dropdown-toggle:enabled:hover,
+      .header .settings > .dropdown > .dropdown-toggle:enabled:hover,
+      .header .header-actions > .dropdown > .dropdown-toggle:enabled:hover {
         opacity: 1; }
+      header .settings > .dropdown > .dropdown-toggle:disabled,
+      header .header-actions > .dropdown > .dropdown-toggle:disabled,
+      .header .settings > .dropdown > .dropdown-toggle:disabled,
+      .header .header-actions > .dropdown > .dropdown-toggle:disabled {
+        cursor: not-allowed; }
     header .settings > .dropdown .dropdown-toggle.nav-icon clr-icon:not([shape^='caret']),
     header .header-actions > .dropdown .dropdown-toggle.nav-icon clr-icon:not([shape^='caret']),
     .header .settings > .dropdown .dropdown-toggle.nav-icon clr-icon:not([shape^='caret']),
@@ -7353,9 +7371,12 @@ header,
     .main-container .header-hamburger-trigger:focus,
     .main-container .header-overflow-trigger:focus {
       outline-offset: -0.208333rem; }
-    .main-container .header-hamburger-trigger:hover,
-    .main-container .header-overflow-trigger:hover {
+    .main-container .header-hamburger-trigger:enabled:hover,
+    .main-container .header-overflow-trigger:enabled:hover {
       opacity: 1; }
+    .main-container .header-hamburger-trigger:disabled,
+    .main-container .header-overflow-trigger:disabled {
+      cursor: not-allowed; }
   .main-container .header-nav.clr-nav-level-1,
   .main-container .subnav.clr-nav-level-1,
   .main-container .sub-nav.clr-nav-level-1,
