@@ -5164,7 +5164,7 @@ a.label {
   .label.label-blue, .label.label-3,
   a.label.label-blue,
   a.label.label-3 {
-    border: 1px solid #007cbb; }
+    border: 1px solid #0079b8; }
   .label.clickable.label-blue:hover, .label.clickable.label-blue:active,
   a.label.clickable.label-blue:hover,
   a.label.clickable.label-blue:active {
@@ -5172,11 +5172,11 @@ a.label {
     background: #565656; }
   .label.clickable.label-blue:active,
   a.label.clickable.label-blue:active {
-    box-shadow: 0 1px 0 0 #007cbb inset;
+    box-shadow: 0 1px 0 0 #0079b8 inset;
     transform: translateY(0.5px); }
   .label.label-blue > .badge,
   a.label.label-blue > .badge {
-    background: #007cbb;
+    background: #0079b8;
     color: #000; }
   .label.label-orange, .label.label-4,
   a.label.label-orange,
@@ -5264,7 +5264,7 @@ a.label {
     background: #ad73c8;
     color: #000; }
   .badge.badge-blue, .badge.badge-3 {
-    background: #007cbb;
+    background: #0079b8;
     color: #000; }
   .badge.badge-orange, .badge.badge-4 {
     background: #ff9c32;
@@ -8113,7 +8113,7 @@ _:-ms-input-placeholder .progress-block > label,
   .spinner.spinner-inline {
     vertical-align: text-bottom; }
   .spinner.spinner-inverse {
-    background: url("data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2072%2072%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20.cls-1%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20.cls-2%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20fill%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20stroke-miterlimit%3A%2010%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20stroke-width%3A%205px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20.cls-1%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20stroke%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20stroke-opacity%3A%200.15%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20.cls-2%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20stroke%3A%20%23007cbb%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Ctitle%3EPreloader_72x2%3C%2Ftitle%3E%0A%20%20%20%20%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2236%22%20cy%3D%2236%22%20r%3D%2233%22%2F%3E%0A%20%20%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22M14.3%2C60.9A33%2C33%2C0%2C0%2C1%2C36%2C3%22%3E%0A%20%20%20%20%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A"); }
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2072%2072%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20.cls-1%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20.cls-2%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20fill%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20stroke-miterlimit%3A%2010%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20stroke-width%3A%205px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20.cls-1%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20stroke%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20stroke-opacity%3A%200.15%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20.cls-2%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20stroke%3A%20%230079b8%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Ctitle%3EPreloader_72x2%3C%2Ftitle%3E%0A%20%20%20%20%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2236%22%20cy%3D%2236%22%20r%3D%2233%22%2F%3E%0A%20%20%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22M14.3%2C60.9A33%2C33%2C0%2C0%2C1%2C36%2C3%22%3E%0A%20%20%20%20%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A"); }
   .spinner.spinner-check {
     -webkit-animation: none;
     animation: none;
@@ -8664,15 +8664,15 @@ _:-ms-input-placeholder .progress-block > label,
     transform: translate(0, 0.166667rem) rotate(-45deg);
     border-color: #fff; }
   .clr-checkbox-wrapper input[type='checkbox']:checked + label::before {
-    background: #007cbb;
+    background: #0079b8;
     border: none; }
   .clr-checkbox-wrapper input[type='checkbox']:checked + label::after {
     display: inline-block; }
   .clr-checkbox-wrapper input[type='checkbox'].clr-indeterminate + label::before {
-    border: 1px solid #007cbb; }
+    border: 1px solid #0079b8; }
   .clr-checkbox-wrapper input[type='checkbox'].clr-indeterminate + label::after {
     border-left: none;
-    border-bottom-color: #007cbb;
+    border-bottom-color: #0079b8;
     display: inline-block;
     transform: translate(0, 0.166667rem); }
   .clr-checkbox-wrapper.clr-checkbox-inline {
@@ -8887,17 +8887,17 @@ _:-ms-input-placeholder .progress-block > label,
     border: 1px solid #9a9a9a;
     border-radius: 50%; }
   .clr-radio-wrapper input[type='radio']:checked + label::before {
-    box-shadow: inset 0 0 0 0.25rem #007cbb;
+    box-shadow: inset 0 0 0 0.25rem #0079b8;
     border: none; }
   .clr-radio-wrapper input[type='radio']:focus + label::before {
     outline: 0;
     box-shadow: 0 0 2px 2px #6bc1e3; }
   .clr-radio-wrapper input[type='radio']:focus:checked + label::before {
     outline: 0;
-    box-shadow: inset 0 0 0 0.25rem #007cbb, 0 0 2px 2px #6bc1e3; }
+    box-shadow: inset 0 0 0 0.25rem #0079b8, 0 0 2px 2px #6bc1e3; }
   .clr-radio-wrapper.disabled input[type='radio']:checked + label::before {
     background-color: #ccc;
-    box-shadow: inset 0 0 0 0.25rem #007cbb; }
+    box-shadow: inset 0 0 0 0.25rem #0079b8; }
   .clr-radio-wrapper.clr-radio-inline {
     display: -ms-flexbox;
     display: flex;
@@ -10199,11 +10199,11 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
     transition: color 0.2s ease-in-out; }
   .stack-view .stack-block-expanded > .stack-block-content input[type=text], .stack-view .stack-block-expanded > .stack-block-content input[type=password], .stack-view .stack-block-expanded > .stack-block-content input[type=number], .stack-view .stack-block-expanded > .stack-block-content input[type=email], .stack-view .stack-block-expanded > .stack-block-content input[type=url], .stack-view .stack-block-expanded > .stack-block-content input[type=tel], .stack-view .stack-block-expanded > .stack-block-content input[type=date], .stack-view .stack-block-expanded > .stack-block-content input[type=time], .stack-view .stack-block-expanded > .stack-block-content input[type=datetime-local] {
     border-bottom-color: #737373;
-    background: linear-gradient(to bottom, transparent 95%, #007cbb 95%) no-repeat;
+    background: linear-gradient(to bottom, transparent 95%, #0079b8 95%) no-repeat;
     background-size: 0% 100%;
     transition: background-size 0.2s ease; }
     .stack-view .stack-block-expanded > .stack-block-content input[type=text]:focus, .stack-view .stack-block-expanded > .stack-block-content input[type=password]:focus, .stack-view .stack-block-expanded > .stack-block-content input[type=number]:focus, .stack-view .stack-block-expanded > .stack-block-content input[type=email]:focus, .stack-view .stack-block-expanded > .stack-block-content input[type=url]:focus, .stack-view .stack-block-expanded > .stack-block-content input[type=tel]:focus, .stack-view .stack-block-expanded > .stack-block-content input[type=date]:focus, .stack-view .stack-block-expanded > .stack-block-content input[type=time]:focus, .stack-view .stack-block-expanded > .stack-block-content input[type=datetime-local]:focus {
-      border-bottom: 1px solid #007cbb;
+      border-bottom: 1px solid #0079b8;
       background-size: 100% 100%; }
   .stack-view .stack-block-expanded > .stack-block-content .select select {
     border-bottom-color: #737373; }
@@ -10648,9 +10648,9 @@ _:-ms-input-placeholder .clr-treenode-content .label,
         background-repeat: no-repeat;
         background-size: contain; }
     .datagrid .datagrid-column.asc .datagrid-column-flex::after, .datagrid .datagrid-head .asc.datagrid-row-actions .datagrid-column-flex::after {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23007cbb%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Eicon%20artboards%20patch%202%20strokecenter%3C%2Ftitle%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M8.5%2C3a0.5%2C0.5%2C0%2C0%2C0-.35.15l-3.5%2C3.5a0.5%2C0.5%2C0%2C0%2C0%2C.71.71L8.5%2C4.21l3.15%2C3.15a0.5%2C0.5%2C0%2C0%2C0%2C.71-0.71l-3.5-3.5A0.5%2C0.5%2C0%2C0%2C0%2C8.5%2C3Z%22%2F%3E%3Crect%20class%3D%22cls-1%22%20x%3D%228%22%20y%3D%224%22%20width%3D%221%22%20height%3D%2210%22%2F%3E%3C%2Fsvg%3E"); }
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%230079b8%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Eicon%20artboards%20patch%202%20strokecenter%3C%2Ftitle%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M8.5%2C3a0.5%2C0.5%2C0%2C0%2C0-.35.15l-3.5%2C3.5a0.5%2C0.5%2C0%2C0%2C0%2C.71.71L8.5%2C4.21l3.15%2C3.15a0.5%2C0.5%2C0%2C0%2C0%2C.71-0.71l-3.5-3.5A0.5%2C0.5%2C0%2C0%2C0%2C8.5%2C3Z%22%2F%3E%3Crect%20class%3D%22cls-1%22%20x%3D%228%22%20y%3D%224%22%20width%3D%221%22%20height%3D%2210%22%2F%3E%3C%2Fsvg%3E"); }
     .datagrid .datagrid-column.desc .datagrid-column-flex::after, .datagrid .datagrid-head .desc.datagrid-row-actions .datagrid-column-flex::after {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2016%2016%22%20style%3D%22enable-background%3Anew%200%200%2016%2016%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23007cbb%3B%7D%0A%3C%2Fstyle%3E%0A%3Ctitle%3Eicon%20artboards%20patch%202%20strokecenter%3C%2Ftitle%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M8.5%2C13c-0.1%2C0.1-0.3%2C0-0.4-0.1L4.6%2C9.4c-0.2-0.2-0.2-0.5%2C0-0.7s0.5-0.2%2C0.7%2C0l3.1%2C3.1l3.1-3.2%0A%09c0.2-0.2%2C0.5-0.2%2C0.7%2C0s0.2%2C0.5%2C0%2C0.7C12.2%2C9.3%2C8.6%2C12.9%2C8.5%2C13z%22%2F%3E%0A%3Crect%20x%3D%228%22%20y%3D%223%22%20class%3D%22st0%22%20width%3D%221%22%20height%3D%229.3%22%2F%3E%0A%3C%2Fsvg%3E"); }
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2016%2016%22%20style%3D%22enable-background%3Anew%200%200%2016%2016%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%230079b8%3B%7D%0A%3C%2Fstyle%3E%0A%3Ctitle%3Eicon%20artboards%20patch%202%20strokecenter%3C%2Ftitle%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M8.5%2C13c-0.1%2C0.1-0.3%2C0-0.4-0.1L4.6%2C9.4c-0.2-0.2-0.2-0.5%2C0-0.7s0.5-0.2%2C0.7%2C0l3.1%2C3.1l3.1-3.2%0A%09c0.2-0.2%2C0.5-0.2%2C0.7%2C0s0.2%2C0.5%2C0%2C0.7C12.2%2C9.3%2C8.6%2C12.9%2C8.5%2C13z%22%2F%3E%0A%3Crect%20x%3D%228%22%20y%3D%223%22%20class%3D%22st0%22%20width%3D%221%22%20height%3D%229.3%22%2F%3E%0A%3C%2Fsvg%3E"); }
     .datagrid .datagrid-column .datagrid-filter-toggle, .datagrid .datagrid-head .datagrid-row-actions .datagrid-filter-toggle {
       -webkit-appearance: none;
       -moz-appearance: none;
@@ -10672,11 +10672,11 @@ _:-ms-input-placeholder .clr-treenode-content .label,
       background-size: contain;
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%239a9a9a%3Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%227%209.32%203%205.38%203%205%2013%205%2013%205.38%209%209.32%209%2012.21%207%2013.29%207%209.32%22%2F%3E%3C%2Fsvg%3E"); }
       .datagrid .datagrid-column .datagrid-filter-toggle:hover, .datagrid .datagrid-head .datagrid-row-actions .datagrid-filter-toggle:hover {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23007cbb%3Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%227%209.32%203%205.38%203%205%2013%205%2013%205.38%209%209.32%209%2012.21%207%2013.29%207%209.32%22%2F%3E%3C%2Fsvg%3E"); }
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%230079b8%3Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%227%209.32%203%205.38%203%205%2013%205%2013%205.38%209%209.32%209%2012.21%207%2013.29%207%209.32%22%2F%3E%3C%2Fsvg%3E"); }
       .datagrid .datagrid-column .datagrid-filter-toggle.datagrid-filter-open, .datagrid .datagrid-head .datagrid-row-actions .datagrid-filter-toggle.datagrid-filter-open {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23007cbb%3Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%227%209.32%203%205.38%203%205%2013%205%2013%205.38%209%209.32%209%2012.21%207%2013.29%207%209.32%22%2F%3E%3C%2Fsvg%3E"); }
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%230079b8%3Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%227%209.32%203%205.38%203%205%2013%205%2013%205.38%209%209.32%209%2012.21%207%2013.29%207%209.32%22%2F%3E%3C%2Fsvg%3E"); }
       .datagrid .datagrid-column .datagrid-filter-toggle.datagrid-filtered, .datagrid .datagrid-head .datagrid-row-actions .datagrid-filter-toggle.datagrid-filtered {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23007cbb%3Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%227%209.32%203%205.38%203%205%2013%205%2013%205.38%209%209.32%209%2012.21%207%2013.29%207%209.32%22%2F%3E%3C%2Fsvg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3Anone%3Bstroke%3A%23007cbb%3Bstroke-miterlimit%3A10%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227.5%22%2F%3E%3C%2Fsvg%3E"); }
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%230079b8%3Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%227%209.32%203%205.38%203%205%2013%205%2013%205.38%209%209.32%209%2012.21%207%2013.29%207%209.32%22%2F%3E%3C%2Fsvg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3Anone%3Bstroke%3A%230079b8%3Bstroke-miterlimit%3A10%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227.5%22%2F%3E%3C%2Fsvg%3E"); }
     .datagrid .datagrid-column .datagrid-filter, .datagrid .datagrid-head .datagrid-row-actions .datagrid-filter {
       position: absolute;
       top: 100%;
@@ -10933,14 +10933,14 @@ _:-ms-input-placeholder .clr-treenode-content .label,
     -ms-flex: 0 0 auto;
     flex: 0 0 auto; }
     .datagrid-foot .column-switch-wrapper.active .column-toggle--action {
-      color: #007cbb; }
+      color: #0079b8; }
     .datagrid-foot .column-switch-wrapper .column-toggle--action {
       min-width: 0.75rem;
       padding-left: 0;
       padding-right: 0;
       color: #9a9a9a; }
       .datagrid-foot .column-switch-wrapper .column-toggle--action:hover {
-        color: #007cbb; }
+        color: #0079b8; }
     .datagrid-foot .column-switch-wrapper .column-switch {
       border-radius: 0.125rem;
       padding: 0.75rem;
@@ -10967,7 +10967,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
           padding: 0;
           color: #9a9a9a; }
           .datagrid-foot .column-switch-wrapper .column-switch .switch-header button:hover {
-            color: #007cbb; }
+            color: #0079b8; }
       .datagrid-foot .column-switch-wrapper .column-switch .switch-content {
         max-height: 12.5rem;
         overflow-y: auto;
@@ -11008,7 +11008,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
       margin-left: 0; }
   .pagination-list .pagination-current {
     font-weight: 600;
-    border-bottom: 2px solid #007cbb; }
+    border-bottom: 2px solid #0079b8; }
   .pagination-list .pagination-previous,
   .pagination-list .pagination-next {
     display: inline-block;
