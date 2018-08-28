@@ -10158,6 +10158,8 @@ _:-ms-input-placeholder .clr-treenode-content .label,
     -ms-flex-align: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.6); }
+    .datagrid-overlay-wrapper .datagrid-spinner .spinner {
+      word-wrap: normal; }
 
 .datagrid-scroll-wrapper {
   display: -ms-flexbox;
@@ -11380,7 +11382,7 @@ button.nav-link {
     border-bottom-right-radius: 0; }
   .signpost-content.top-left .popover-pointer {
     border-left: 0.5rem solid transparent;
-    right: -1px; }
+    right: 0; }
     .signpost-content.top-left .popover-pointer:before {
       border-left: 0.5rem solid transparent;
       right: 1px; }
