@@ -4180,6 +4180,7 @@ code.clr-code {
     padding: 0.5rem 0.75rem; }
   .card .list-group-item {
     font-size: clr-getTypePropertyValueForDomElement(card_text, font-size);
+    background-color: #fff;
     border-left-width: 0;
     border-right-width: 0;
     border-color: #eee;
