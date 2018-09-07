@@ -10726,7 +10726,8 @@ _:-ms-input-placeholder .clr-treenode-content .label,
       color: unset;
       cursor: default;
       opacity: 1;
-      line-height: inherit; }
+      line-height: inherit;
+      font-weight: 400; }
     .datagrid .datagrid-foot-select.checkbox input[type='checkbox'] + label::before, .datagrid .datagrid-foot-select.checkbox input[type='checkbox'] + label::after {
       top: 0.333333rem; }
     .datagrid .datagrid-foot-select.checkbox input[type='checkbox'] + label::after {
@@ -11108,7 +11109,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   .datagrid-compact .datagrid-foot .column-switch-wrapper .column-toggle--action {
     margin: 0;
     outline-offset: -0.166667rem; }
-  .datagrid-compact .datagrid-foot .datagrid-foot-select.checkbox input[type='checkbox'] + label::before, .datagrid-compact .datagrid-foot .datagrid-foot-select.checkbox input[type='checkbox'] + label::after {
+  .datagrid-compact .datagrid-foot .datagrid-foot-select input[type='checkbox'] + label::before, .datagrid-compact .datagrid-foot .datagrid-foot-select input[type='checkbox'] + label::after {
     top: 0.11111rem; }
 
 .datagrid-cell-width-zero {
