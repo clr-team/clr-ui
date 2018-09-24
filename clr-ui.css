@@ -11524,4 +11524,39 @@ button.nav-link {
   padding: 0 1rem 1rem;
   max-height: 20rem;
   overflow-y: auto; }
+
+.drag-handle {
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.in-drag {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .in-drag * {
+    pointer-events: none; }
+  .in-drag .draggable.being-dragged {
+    opacity: 0.6; }
+
+.draggable-ghost {
+  position: fixed;
+  display: block;
+  visibility: hidden;
+  z-index: 2147483647;
+  pointer-events: none;
+  will-change: left, top; }
+  .draggable-ghost > .draggable {
+    margin: 0;
+    opacity: 1; }
+  .draggable-ghost.dropped {
+    opacity: 0; }
+
+.droppable.draggable-match {
+  border: 1px dashed #b68cd1; }
+
+.droppable.draggable-over {
+  border: 1px dashed #660092; }
 /*# sourceMappingURL=clr-ui.css.map */
