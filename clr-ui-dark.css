@@ -8552,12 +8552,30 @@ _:-ms-input-placeholder .progress-block > label,
 .clr-control-container {
   display: inline-block; }
 
+.clr-control-inline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+  align-content: flex-start; }
+  .clr-control-inline .clr-control-label {
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: auto; }
+
 .clr-subtext {
   display: block;
   font-size: 0.458333rem;
   line-height: 0.5rem;
   color: #737373;
   margin-top: 0.25rem; }
+
+.clr-subtext-wrapper {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  display: -ms-flexbox;
+  display: flex; }
 
 .clr-validate-icon {
   width: 1rem;
@@ -8576,13 +8594,13 @@ _:-ms-input-placeholder .progress-block > label,
 .clr-error .clr-subtext {
   color: #c92100; }
 
-.clr-form-horizontal .clr-control-label,
-.clr-form-horizontal .clr-form-control.clr-form-control-multi .clr-control-label {
+.clr-form-horizontal .clr-form-control > .clr-control-label,
+.clr-form-horizontal .clr-form-control > .clr-form-control.clr-form-control-multi .clr-control-label {
   width: 8rem;
   -ms-flex-negative: 0;
   flex-shrink: 0; }
 
-.clr-form-horizontal.row .clr-control-label {
+.clr-form-horizontal.clr-row .clr-control-label {
   width: auto; }
 
 .clr-form-horizontal .clr-form-control {
@@ -8614,8 +8632,14 @@ _:-ms-input-placeholder .progress-block > label,
   display: flex; }
 
 .clr-form-compact .clr-subtext {
+  display: inline-block;
   margin-top: 0.25rem;
   margin-left: 0.25rem; }
+
+.clr-form-compact .clr-subtext-wrapper {
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  display: inline-block; }
 
 .clr-form {
   padding: 0.25rem; }
@@ -8909,17 +8933,9 @@ _:-ms-input-placeholder .progress-block > label,
   .clr-radio-wrapper.disabled input[type='radio']:checked + label::before {
     background-color: #ccc;
     box-shadow: inset 0 0 0 0.25rem #0079b8; }
-  .clr-radio-wrapper.clr-radio-inline {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-line-pack: start;
-    align-content: flex-start; }
-    .clr-radio-wrapper.clr-radio-inline .clr-control-label {
-      display: inline-block;
-      margin-right: 0.5rem;
-      width: auto; }
+
+.clr-form-compact .clr-error .clr-subtext {
+  margin-left: 0; }
 
 .clr-form-compact .clr-radio-wrapper {
   max-width: 100%;
