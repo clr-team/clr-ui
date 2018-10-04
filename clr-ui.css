@@ -8605,7 +8605,8 @@ _:-ms-input-placeholder .progress-block > label,
   background-size: 0% 100%;
   transition: background-size 0.2s ease;
   margin-right: 1rem;
-  max-width: calc(100% - 1rem); }
+  max-width: calc(100% - 1rem);
+  height: 24px; }
   .clr-input-group:focus, .clr-input-group.clr-focus {
     border-bottom: 1px solid #0094d2;
     background-size: 100% 100%; }
@@ -9165,6 +9166,10 @@ select[size] {
     fill: #0079b8; }
     .datepicker-trigger .datepicker-trigger-icon:hover {
       fill: #004a70; }
+
+.clr-form-control .datepicker-trigger {
+  line-height: calc(1rem - 2px);
+  height: calc(1rem - 2px); }
 
 .date-input {
   -ms-flex: 1 1 auto;
