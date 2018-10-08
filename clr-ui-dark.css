@@ -880,8 +880,27 @@ textarea {
  *
  * Usage: ../popover/dropdown/_dropdown.clarity.scss
  */
+/******
+ * Forms: TODO: track down component usages and names
+ * A form is a structured layout of related input components.
+ * There are a variety of variables used to change form elements, including:
+ *
+ * Usage:
+ * ../forms/styles/_checkbox.clarity.scss
+ * ../forms/styles/_containers.clarity.scss
+ * ../forms/styles/_file.clarity.scss
+ * ../forms/styles/_form.clarity.scss
+ * ../forms/styles/_input.clarity.scss
+ * ../forms/styles/_input-group.clarity.scss
+ * ../forms/styles/_mixings.forms.scss
+ * ../forms/styles/radio.clarity.scss
+ * ../forms/styles/_select.clarity.scss
+ * ../forms/styles/_textarea.clarity.scss
+ * ../forms/styles/_variables.clarity.scss
+ *
+ */
 /**********
- * Form
+ * Forms (Deprecated)
  * A form is a structured layout of related input components.
  * There are a variety of variables used to change form elements, including:
  * - Input
@@ -8544,7 +8563,7 @@ _:-ms-input-placeholder .progress-block > label,
 
 .clr-control-label {
   display: block;
-  color: #444444;
+  color: #adbbc4;
   font-size: 0.541667rem;
   font-weight: 600;
   line-height: 0.75rem; }
@@ -8568,7 +8587,7 @@ _:-ms-input-placeholder .progress-block > label,
   display: block;
   font-size: 0.458333rem;
   line-height: 0.5rem;
-  color: #737373;
+  color: #adbbc4;
   margin-top: 0.25rem; }
 
 .clr-subtext-wrapper {
@@ -8583,7 +8602,7 @@ _:-ms-input-placeholder .progress-block > label,
   min-width: 1rem;
   min-height: 1rem;
   display: inline-block;
-  color: #c92100;
+  color: #f54f47;
   display: none;
   margin-left: -1rem; }
 
@@ -8592,7 +8611,7 @@ _:-ms-input-placeholder .progress-block > label,
   display: inline-block; }
 
 .clr-error .clr-subtext {
-  color: #c92100; }
+  color: #f54f47; }
 
 .clr-form-horizontal .clr-form-control > .clr-control-label,
 .clr-form-horizontal .clr-form-control > .clr-form-control.clr-form-control-multi .clr-control-label {
@@ -8667,7 +8686,7 @@ _:-ms-input-placeholder .progress-block > label,
     position: relative;
     margin-top: 0.25rem;
     display: inline-block;
-    color: #000;
+    color: #adbbc4;
     min-height: 1rem;
     padding-left: 0.916667rem;
     margin-top: 0;
@@ -8681,7 +8700,7 @@ _:-ms-input-placeholder .progress-block > label,
     display: inline-block;
     height: 0.666667rem;
     width: 0.666667rem;
-    border: 1px solid #9a9a9a;
+    border: 1px solid #adbbc4;
     border-radius: 0.125rem; }
   .clr-checkbox-wrapper input[type='checkbox']:focus + label::before {
     outline: 0;
@@ -8697,17 +8716,17 @@ _:-ms-input-placeholder .progress-block > label,
     top: 0.166666rem;
     left: 0.166667rem;
     transform: translate(0, 0.166667rem) rotate(-45deg);
-    border-color: #fff; }
+    border-color: #000; }
   .clr-checkbox-wrapper input[type='checkbox']:checked + label::before {
-    background: #0079b8;
+    background: #49afd9;
     border: none; }
   .clr-checkbox-wrapper input[type='checkbox']:checked + label::after {
     display: inline-block; }
   .clr-checkbox-wrapper input[type='checkbox'].clr-indeterminate + label::before {
-    border: 1px solid #0079b8; }
+    border: 1px solid #adbbc4; }
   .clr-checkbox-wrapper input[type='checkbox'].clr-indeterminate + label::after {
     border-left: none;
-    border-bottom-color: #0079b8;
+    border-bottom-color: #adbbc4;
     display: inline-block;
     transform: translate(0, 0.166667rem); }
   .clr-checkbox-wrapper.clr-checkbox-inline {
@@ -8724,7 +8743,7 @@ _:-ms-input-placeholder .progress-block > label,
 
 .clr-form-control-disabled .clr-checkbox-wrapper input[type='checkbox'] + label::before,
 .clr-form-control-disabled .clr-checkbox-wrapper input[type='checkbox']:checked + label::before {
-  background-color: #ccc;
+  background-color: #8f9ba3;
   border: none; }
 
 .clr-form-control-disabled .clr-checkbox-wrapper input[type='checkbox']:checked + label::after {
@@ -8805,9 +8824,9 @@ _:-ms-input-placeholder .progress-block > label,
   box-shadow: none;
   background: none;
   height: 1rem;
-  color: #000;
+  color: #e9ecef;
   display: inline-block;
-  border-bottom: 1px solid #9a9a9a;
+  border-bottom: 1px solid #adbbc4;
   padding: 0 0.25rem;
   max-height: 1rem;
   font-size: 0.541667rem; }
@@ -8816,20 +8835,20 @@ _:-ms-input-placeholder .progress-block > label,
   .clr-input[readonly] {
     border: none; }
   .clr-input:not([readonly]) {
-    background: linear-gradient(to bottom, transparent 95%, #0094d2 95%) no-repeat;
+    background: linear-gradient(to bottom, transparent 95%, #49afd9 95%) no-repeat;
     background-size: 0% 100%;
     transition: background-size 0.2s ease; }
     .clr-input:not([readonly]):focus, .clr-input:not([readonly]).clr-focus {
-      border-bottom: 1px solid #0094d2;
+      border-bottom: 1px solid #49afd9;
       background-size: 100% 100%; }
 
 .clr-error .clr-input:not([readonly]) {
-  border-bottom-color: #c92100;
-  background: linear-gradient(to bottom, transparent 95%, #c92100 95%) no-repeat;
+  border-bottom-color: #f54f47;
+  background: linear-gradient(to bottom, transparent 95%, #f54f47 95%) no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.2s ease; }
   .clr-error .clr-input:not([readonly]):focus, .clr-error .clr-input:not([readonly]).clr-focus {
-    border-bottom: 1px solid #c92100;
+    border-bottom: 1px solid #f54f47;
     background-size: 100% 100%; }
 
 .clr-form-control.row .clr-input-wrapper {
@@ -8847,17 +8866,17 @@ _:-ms-input-placeholder .progress-block > label,
   max-width: calc(100% + 1rem); }
 
 .clr-input-group {
-  color: #000;
+  color: #e9ecef;
   display: inline-block;
-  border-bottom: 1px solid #9a9a9a;
-  background: linear-gradient(to bottom, transparent 95%, #0094d2 95%) no-repeat;
+  border-bottom: 1px solid #adbbc4;
+  background: linear-gradient(to bottom, transparent 95%, #49afd9 95%) no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.2s ease;
   margin-right: 1rem;
   max-width: calc(100% - 1rem);
   height: 24px; }
   .clr-input-group:focus, .clr-input-group.clr-focus {
-    border-bottom: 1px solid #0094d2;
+    border-bottom: 1px solid #49afd9;
     background-size: 100% 100%; }
   .clr-input-group .clr-input {
     background: none;
@@ -8870,17 +8889,17 @@ _:-ms-input-placeholder .progress-block > label,
   .clr-input-group select {
     border: none; }
   .clr-input-group .clr-input-group-icon-action {
-    color: #0094d2;
+    color: #49afd9;
     cursor: pointer; }
 
 .clr-error .clr-input-group {
-  border-bottom-color: #c92100;
-  background: linear-gradient(to bottom, transparent 95%, #c92100 95%) no-repeat;
+  border-bottom-color: #f54f47;
+  background: linear-gradient(to bottom, transparent 95%, #f54f47 95%) no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.2s ease;
   margin-right: 0.25rem; }
   .clr-error .clr-input-group:focus, .clr-error .clr-input-group.clr-focus {
-    border-bottom: 1px solid #c92100;
+    border-bottom: 1px solid #f54f47;
     background-size: 100% 100%; }
 
 .clr-radio-wrapper {
@@ -8904,7 +8923,7 @@ _:-ms-input-placeholder .progress-block > label,
     position: relative;
     margin-top: 0.25rem;
     display: inline-block;
-    color: #000;
+    color: #adbbc4;
     min-height: 1rem;
     padding-left: 0.916667rem;
     margin-top: 0;
@@ -8920,20 +8939,20 @@ _:-ms-input-placeholder .progress-block > label,
     display: inline-block;
     height: 0.666667rem;
     width: 0.666667rem;
-    border: 1px solid #9a9a9a;
+    border: 1px solid #adbbc4;
     border-radius: 50%; }
   .clr-radio-wrapper input[type='radio']:checked + label::before {
-    box-shadow: inset 0 0 0 0.25rem #0079b8;
+    box-shadow: inset 0 0 0 0.25rem #49afd9;
     border: none; }
   .clr-radio-wrapper input[type='radio']:focus + label::before {
     outline: 0;
     box-shadow: 0 0 2px 2px #6bc1e3; }
   .clr-radio-wrapper input[type='radio']:focus:checked + label::before {
     outline: 0;
-    box-shadow: inset 0 0 0 0.25rem #0079b8, 0 0 2px 2px #6bc1e3; }
+    box-shadow: inset 0 0 0 0.25rem #49afd9, 0 0 2px 2px #6bc1e3; }
   .clr-radio-wrapper.disabled input[type='radio']:checked + label::before {
     background-color: #ccc;
-    box-shadow: inset 0 0 0 0.25rem #0079b8; }
+    box-shadow: inset 0 0 0 0.25rem #49afd9; }
 
 .clr-form-compact .clr-error .clr-subtext {
   margin-left: 0; }
@@ -8973,10 +8992,10 @@ _:-ms-input-placeholder .progress-block > label,
     box-shadow: none;
     background: none;
     height: 1rem;
-    color: #000;
+    color: #e9ecef;
     display: inline-block;
-    border-bottom: 1px solid #9a9a9a;
-    background: linear-gradient(to bottom, transparent 95%, #0094d2 95%) no-repeat;
+    border-bottom: 1px solid #adbbc4;
+    background: linear-gradient(to bottom, transparent 95%, #49afd9 95%) no-repeat;
     background-size: 0% 100%;
     transition: background-size 0.2s ease;
     position: relative;
@@ -8990,7 +9009,7 @@ _:-ms-input-placeholder .progress-block > label,
     .clr-select-wrapper select:focus, .clr-select-wrapper select.clr-focus,
     .clr-multiselect-wrapper select:focus,
     .clr-multiselect-wrapper select.clr-focus {
-      border-bottom: 1px solid #0094d2;
+      border-bottom: 1px solid #49afd9;
       background-size: 100% 100%; }
     .clr-select-wrapper select:hover, .clr-select-wrapper select:active,
     .clr-multiselect-wrapper select:hover,
@@ -9053,7 +9072,7 @@ select[size] {
     color: #000; }
 
 .clr-error select[multiple] {
-  border-color: #c92100; }
+  border-color: #f54f47; }
 
 .clr-form-control-disabled .clr-select.disabled {
   opacity: 0.5;
@@ -9068,7 +9087,7 @@ select[size] {
   .clr-form-control-disabled .clr-select.disabled > select:hover,
   .clr-form-control-disabled .clr-select select:disabled:hover {
     background: none;
-    border-color: #9a9a9a; }
+    border-color: #adbbc4; }
 
 .clr-form-compact .clr-multiselect-wrapper {
   margin-top: 0; }
@@ -9085,9 +9104,9 @@ select[size] {
   max-width: calc(100% - 0.25rem);
   height: auto;
   resize: vertical;
-  background: #fff;
-  border: 1px solid #9a9a9a;
-  color: #000;
+  background: #17242b;
+  border: 1px solid #adbbc4;
+  color: #e9ecef;
   border-radius: 0.125rem;
   padding: calc(0.25rem + 2px) 0.5rem;
   font-size: 0.541667rem; }
@@ -9096,10 +9115,10 @@ select[size] {
     box-shadow: 0 0 2px 2px #49afd9; }
 
 .clr-error .clr-textarea {
-  border-color: #c92100; }
+  border-color: #f54f47; }
   .clr-error .clr-textarea:focus {
     outline: 0;
-    box-shadow: 0 0 2px 2px #ff7d63; }
+    box-shadow: 0 0 2px 2px #fddad8; }
 
 .clr-control-container textarea {
   width: auto; }
@@ -9979,16 +9998,16 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
   padding: 0 1rem 0 0.25rem;
   min-height: 1rem;
   width: 5rem;
-  color: #000;
+  color: #e9ecef;
   display: inline-block;
-  border-bottom: 1px solid #9a9a9a;
+  border-bottom: 1px solid #adbbc4;
   font-size: 0.541667rem;
-  background: linear-gradient(to bottom, transparent 95%, #0094d2 95%) no-repeat;
+  background: linear-gradient(to bottom, transparent 95%, #49afd9 95%) no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.2s ease;
   outline: none; }
   .clr-combobox-input:focus {
-    border-bottom: 1px solid #0094d2;
+    border-bottom: 1px solid #49afd9;
     background-size: 100% 100%; }
 
 .clr-combobox-trigger {
