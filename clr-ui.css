@@ -3159,8 +3159,8 @@ code.clr-code {
 .btn.btn-warning,
 .btn-danger .btn,
 .btn-warning .btn {
-  border-color: #e62700;
-  background-color: #e62700;
+  border-color: #e12200;
+  background-color: #e12200;
   color: #fff; }
   .btn.btn-danger:visited,
   .btn.btn-warning:visited,
@@ -3285,7 +3285,7 @@ code.clr-code {
 .btn-outline-warning .btn {
   border-color: #c92100;
   background-color: transparent;
-  color: #e62700; }
+  color: #e12200; }
   .btn.btn-danger-outline:visited,
   .btn.btn-outline-danger:visited,
   .btn.btn-warning-outline:visited,
@@ -3294,7 +3294,7 @@ code.clr-code {
   .btn-outline-danger .btn:visited,
   .btn-warning-outline .btn:visited,
   .btn-outline-warning .btn:visited {
-    color: #e62700; }
+    color: #e12200; }
   .btn.btn-danger-outline:hover,
   .btn.btn-outline-danger:hover,
   .btn.btn-warning-outline:hover,
@@ -10402,7 +10402,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
         height: 100vh;
         border-right: 1px dotted #89cbdf; }
       .datagrid .datagrid-column .datagrid-column-separator .exceeded-max, .datagrid .datagrid-head .datagrid-row-actions .datagrid-column-separator .exceeded-max {
-        border-right: 1px dotted rgba(230, 39, 0, 0.3); }
+        border-right: 1px dotted rgba(225, 34, 0, 0.3); }
     .datagrid .datagrid-column:last-child .datagrid-column-separator, .datagrid .datagrid-head .datagrid-row-actions:last-child .datagrid-column-separator {
       display: none; }
     .datagrid .datagrid-column .datagrid-column-flex, .datagrid .datagrid-head .datagrid-row-actions .datagrid-column-flex {

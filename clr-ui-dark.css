@@ -10651,7 +10651,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
         height: 100vh;
         border-right: 1px dotted #89cbdf; }
       .datagrid .datagrid-column .datagrid-column-separator .exceeded-max, .datagrid .datagrid-head .datagrid-row-actions .datagrid-column-separator .exceeded-max {
-        border-right: 1px dotted rgba(230, 39, 0, 0.3); }
+        border-right: 1px dotted rgba(225, 34, 0, 0.3); }
     .datagrid .datagrid-column:last-child .datagrid-column-separator, .datagrid .datagrid-head .datagrid-row-actions:last-child .datagrid-column-separator {
       display: none; }
     .datagrid .datagrid-column .datagrid-column-flex, .datagrid .datagrid-head .datagrid-row-actions .datagrid-column-flex {
