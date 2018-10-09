@@ -8624,6 +8624,9 @@ _:-ms-input-placeholder .progress-block > label,
     color: #0094d2;
     cursor: pointer; }
 
+.clr-form-control-disabled .clr-input-group-icon-action {
+  cursor: not-allowed; }
+
 .clr-error .clr-input-group {
   border-bottom-color: #c92100;
   background: linear-gradient(to bottom, transparent 95%, #c92100 95%) no-repeat;
@@ -9166,6 +9169,9 @@ select[size] {
     fill: #0079b8; }
     .datepicker-trigger .datepicker-trigger-icon:hover {
       fill: #004a70; }
+
+.datepicker-trigger:disabled {
+  cursor: not-allowed; }
 
 .clr-form-control .datepicker-trigger {
   line-height: calc(1rem - 2px);
