@@ -10583,8 +10583,6 @@ _:-ms-input-placeholder .clr-treenode-content .label,
     display: none; }
   .datagrid-computing-columns-width .datagrid-placeholder-container {
     display: none; }
-  .datagrid-computing-columns-width .datagrid-fixed-column {
-    display: none; }
 
 .datagrid {
   -ms-flex: 1 1 auto;
