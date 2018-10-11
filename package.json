@@ -10,9 +10,6 @@
   "peerDependencies": {
     "@clr/icons": "0.13.4"
   },
-  "optionalDependencies": {
-    "bootstrap": "4.0.0-alpha.5"
-  },
   "author": "clarity",
   "license": "MIT",
   "bugs": {
