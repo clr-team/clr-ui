@@ -7691,6 +7691,9 @@ _:-ms-input-placeholder .progress-block > label,
       margin-right: 0.5rem;
       width: auto; }
 
+.clr-error .clr-checkbox-wrapper input[type='checkbox'] + label::before {
+  border-color: #c92100; }
+
 .clr-form-control-disabled .clr-checkbox-wrapper input[type='checkbox'] + label::before,
 .clr-form-control-disabled .clr-checkbox-wrapper input[type='checkbox']:checked + label::before {
   background-color: #ccc;
@@ -7906,6 +7909,9 @@ _:-ms-input-placeholder .progress-block > label,
   .clr-radio-wrapper.disabled input[type='radio']:checked + label::before {
     background-color: #ccc;
     box-shadow: inset 0 0 0 0.25rem #0079b8; }
+
+.clr-error .clr-radio-wrapper input[type='radio'] + label::before {
+  border-color: #c92100; }
 
 .clr-form-compact .clr-error .clr-subtext {
   margin-left: 0; }
@@ -9315,13 +9321,14 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
     background: #d9e4ea;
     color: #000; }
 
-.clr-treenode-checkbox {
+.clr-tree-node-content-container > .clr-checkbox-wrapper {
   height: 1.25rem;
   width: 1.25rem;
   padding-top: 0.125rem;
   padding-left: 0.291666rem; }
-  .clr-treenode-checkbox:first-child {
-    margin-left: 1.25rem; }
+
+.clr-tree-node-content-container > .clr-checkbox-wrapper:first-child {
+  margin-left: 1.25rem; }
 
 .clr-treenode-content .label {
   margin-left: 0.25rem; }
@@ -9534,15 +9541,6 @@ _:-ms-input-placeholder .clr-treenode-content .label,
       border: none; }
   .datagrid-row .datagrid-select {
     min-width: calc(0.375rem - 1px); }
-    .datagrid-row .datagrid-select .radio label,
-    .datagrid-row .datagrid-select .checkbox label {
-      display: block;
-      min-height: 0.541666rem;
-      padding-left: 0.583333rem; }
-      .datagrid-row .datagrid-select .radio label::before, .datagrid-row .datagrid-select .radio label::after,
-      .datagrid-row .datagrid-select .checkbox label::before,
-      .datagrid-row .datagrid-select .checkbox label::after {
-        top: 0; }
   .datagrid-row .datagrid-signpost-trigger .signpost {
     margin: -0.3rem 0;
     height: 1.03rem; }
@@ -9996,22 +9994,13 @@ _:-ms-input-placeholder .clr-treenode-content .label,
         -ms-flex-pack: end;
         justify-content: flex-end; }
 
-.datagrid-footer-select.checkbox {
-  display: block;
-  line-height: inherit;
-  -ms-flex: 0 0 1.416667rem;
-  flex: 0 0 1.416667rem;
-  margin-right: 0.083333rem;
-  -ms-flex-item-align: start;
-  align-self: flex-start; }
-  .datagrid-footer-select.checkbox label {
-    color: unset;
-    cursor: default;
-    opacity: 1;
-    line-height: inherit; }
-  .datagrid-footer-select.checkbox input[type='checkbox'] + label::before, .datagrid-footer-select.checkbox input[type='checkbox'] + label::after {
-    top: 0.333333rem; }
-  .datagrid-footer-select.checkbox input[type='checkbox'] + label::after {
+.clr-form-control-disabled .datagrid-footer-select.clr-checkbox-wrapper input[type='checkbox']:checked + label {
+  top: calc(1rem / 6);
+  cursor: default;
+  margin-right: 0.375rem; }
+  .clr-form-control-disabled .datagrid-footer-select.clr-checkbox-wrapper input[type='checkbox']:checked + label::before {
+    background-color: #737373; }
+  .clr-form-control-disabled .datagrid-footer-select.clr-checkbox-wrapper input[type='checkbox']:checked + label::after {
     border-left-color: #fff;
     border-bottom-color: #fff; }
 
@@ -10029,9 +10018,10 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   background-color: rgba(255, 255, 255, 0.6);
   z-index: 590; }
 
-.datagrid-select .radio,
-.datagrid-select .checkbox {
-  margin-top: -0.041667rem; }
+.datagrid-select .clr-control-label {
+  min-height: 0.5rem;
+  margin-top: -0.2rem;
+  padding-left: 0.583333rem; }
 
 .datagrid-compact .datagrid-header {
   min-height: 1rem; }
@@ -10080,13 +10070,6 @@ _:-ms-input-placeholder .clr-treenode-content .label,
 .datagrid-compact .datagrid-signpost-trigger .signpost .signpost-trigger clr-icon {
   width: 0.875rem;
   height: 0.875rem; }
-
-.datagrid-compact .datagrid-footer-select.checkbox input[type='checkbox'] + label::before, .datagrid-compact .datagrid-footer-select.checkbox input[type='checkbox'] + label::after {
-  top: 0.11111rem; }
-
-.datagrid-compact .datagrid-footer-select.checkbox input[type='checkbox'] + label::after {
-  border-left-color: #fff;
-  border-bottom-color: #fff; }
 
 .datagrid-compact .datagrid-footer {
   height: 1rem;
