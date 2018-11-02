@@ -9740,7 +9740,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   .datagrid-row:hover .datagrid-row-detail {
     background-color: #29414e; }
   .datagrid-row.datagrid-selected {
-    color: #000; }
+    color: #fff; }
     .datagrid-row.datagrid-selected .datagrid-row-sticky,
     .datagrid-row.datagrid-selected .datagrid-row-scrollable,
     .datagrid-row.datagrid-selected .datagrid-row-detail {
