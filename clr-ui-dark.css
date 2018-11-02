@@ -5359,8 +5359,25 @@ ol.list-spacer {
       .login-wrapper .login .login-group .auth-source,
       .login-wrapper .login .login-group .username,
       .login-wrapper .login .login-group .password,
-      .login-wrapper .login .login-group .checkbox {
+      .login-wrapper .login .login-group .checkbox,
+      .login-wrapper .login .login-group .clr-form-control,
+      .login-wrapper .login .login-group .clr-checkbox-wrapper {
         margin: 0.25rem 0 0.75rem 0; }
+      .login-wrapper .login .login-group .clr-control-container {
+        display: block;
+        width: 100%; }
+        .login-wrapper .login .login-group .clr-control-container .clr-select-wrapper,
+        .login-wrapper .login .login-group .clr-control-container .clr-select {
+          width: 100%; }
+        .login-wrapper .login .login-group .clr-control-container .clr-input-wrapper > .clr-input {
+          width: 100%; }
+        .login-wrapper .login .login-group .clr-control-container .clr-input-wrapper {
+          width: 100%; }
+          .login-wrapper .login .login-group .clr-control-container .clr-input-wrapper > .clr-input-group {
+            max-width: 100%;
+            width: 100%; }
+            .login-wrapper .login .login-group .clr-control-container .clr-input-wrapper > .clr-input-group > .clr-input {
+              width: calc(100% - 1rem); }
       .login-wrapper .login .login-group .tooltip-validation {
         margin-top: 0.25rem; }
       .login-wrapper .login .login-group .tooltip-validation .username,
