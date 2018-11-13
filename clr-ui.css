@@ -1930,7 +1930,7 @@ a:hover {
   text-decoration: underline; }
 
 a:active {
-  color: #9460b8;
+  color: #9b56bb;
   text-decoration: underline; }
 
 a:visited {
@@ -2352,8 +2352,8 @@ code.clr-code {
 
 .btn.btn-success,
 .btn-success .btn {
-  border-color: #318700;
-  background-color: #318700;
+  border-color: #2f8400;
+  background-color: #2f8400;
   color: #fff; }
   .btn.btn-success:visited,
   .btn-success .btn:visited {
@@ -3110,11 +3110,11 @@ code.clr-code {
     color: #565656;
     border: 1px solid #60b515; }
     .alert.alert-success .alert-icon {
-      color: #318700; }
+      color: #2f8400; }
   .alert.alert-warning {
-    background: #feecb5;
+    background: #fef3b5;
     color: #565656;
-    border: 1px solid #ffdc0b; }
+    border: 1px solid #fdcf08; }
     .alert.alert-warning .alert-icon {
       color: #565656; }
   .alert.alert-danger {
@@ -4127,7 +4127,7 @@ a.label {
   .label.label-purple, .label.label-2,
   a.label.label-purple,
   a.label.label-2 {
-    border: 1px solid #9460b8; }
+    border: 1px solid #9b56bb; }
   .label.clickable.label-purple:hover, .label.clickable.label-purple:active,
   a.label.clickable.label-purple:hover,
   a.label.clickable.label-purple:active {
@@ -4135,11 +4135,11 @@ a.label {
     background: #eee; }
   .label.clickable.label-purple:active,
   a.label.clickable.label-purple:active {
-    box-shadow: 0 1px 0 0 #9460b8 inset;
+    box-shadow: 0 1px 0 0 #9b56bb inset;
     transform: translateY(0.5px); }
   .label.label-purple > .badge,
   a.label.label-purple > .badge {
-    background: #9460b8;
+    background: #9b56bb;
     color: #fff; }
   .label.label-blue, .label.label-3,
   a.label.label-blue,
@@ -4161,7 +4161,7 @@ a.label {
   .label.label-orange, .label.label-4,
   a.label.label-orange,
   a.label.label-4 {
-    border: 1px solid #eb8d00; }
+    border: 1px solid #ff8400; }
   .label.clickable.label-orange:hover, .label.clickable.label-orange:active,
   a.label.clickable.label-orange:hover,
   a.label.clickable.label-orange:active {
@@ -4169,11 +4169,11 @@ a.label {
     background: #eee; }
   .label.clickable.label-orange:active,
   a.label.clickable.label-orange:active {
-    box-shadow: 0 1px 0 0 #eb8d00 inset;
+    box-shadow: 0 1px 0 0 #ff8400 inset;
     transform: translateY(0.5px); }
   .label.label-orange > .badge,
   a.label.label-orange > .badge {
-    background: #eb8d00;
+    background: #ff8400;
     color: #000; }
   .label.label-light-blue, .label.label-5,
   a.label.label-light-blue,
@@ -4204,9 +4204,9 @@ a.label {
     border: 1px solid #60b515; }
   .label.label-warning,
   a.label.label-warning {
-    background: #feecb5;
+    background: #fef3b5;
     color: #313131;
-    border: 1px solid #ffdc0b; }
+    border: 1px solid #fdcf08; }
   .label.label-danger,
   a.label.label-danger {
     background: #f5dbd9;
@@ -4241,13 +4241,13 @@ a.label {
     background: #737373;
     color: #fff; }
   .badge.badge-purple, .badge.badge-2 {
-    background: #9460b8;
+    background: #9b56bb;
     color: #fff; }
   .badge.badge-blue, .badge.badge-3 {
     background: #004a70;
     color: #fff; }
   .badge.badge-orange, .badge.badge-4 {
-    background: #eb8d00;
+    background: #ff8400;
     color: #000; }
   .badge.badge-light-blue, .badge.badge-5 {
     background: #89cbdf;
@@ -4256,13 +4256,13 @@ a.label {
     background: #0079b8;
     color: #fff; }
   .badge.badge-success {
-    background: #318700;
+    background: #2f8400;
     color: #fff; }
   .badge.badge-danger {
     background: #c92100;
     color: #fff; }
   .badge.badge-warning {
-    background: #ffdc0b;
+    background: #fdcf08;
     color: #000; }
 
 @-moz-document url-prefix() {
