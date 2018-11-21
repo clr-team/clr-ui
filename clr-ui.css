@@ -6094,12 +6094,14 @@ header,
     display: -ms-flexbox;
     display: flex;
     color: #565656; }
-    .clr-vertical-nav .nav-group-content:hover, .clr-vertical-nav .nav-group-content.active {
+    .clr-vertical-nav .nav-group-content.active {
       color: #565656;
       background-color: #fff; }
-      .clr-vertical-nav .nav-group-content:hover .nav-icon, .clr-vertical-nav .nav-group-content.active .nav-icon {
+      .clr-vertical-nav .nav-group-content.active .nav-icon {
         fill: #0079b8; }
     .clr-vertical-nav .nav-group-content:hover {
+      color: #565656;
+      background-color: #ccc;
       text-decoration: none; }
     .clr-vertical-nav .nav-group-content .nav-link {
       -ms-flex: 1 1 auto;
@@ -6174,12 +6176,14 @@ header,
     display: -ms-flexbox;
     display: flex;
     color: #565656; }
-    .clr-vertical-nav .nav-link:hover, .clr-vertical-nav .nav-link.active {
+    .clr-vertical-nav .nav-link.active {
       color: #565656;
       background-color: #fff; }
-      .clr-vertical-nav .nav-link:hover .nav-icon, .clr-vertical-nav .nav-link.active .nav-icon {
+      .clr-vertical-nav .nav-link.active .nav-icon {
         fill: #0079b8; }
     .clr-vertical-nav .nav-link:hover {
+      color: #565656;
+      background-color: #ccc;
       text-decoration: none; }
   .clr-vertical-nav .nav-header {
     padding: 0 0.5rem 0 1rem;
@@ -6233,6 +6237,8 @@ header,
       fill: #0079b8; }
   .clr-vertical-nav .nav-group-content .nav-link.active ~ .nav-group-trigger {
     background-color: #fff; }
+  .clr-vertical-nav .nav-group-content .nav-link:hover ~ .nav-group-trigger {
+    background-color: #ccc; }
   .main-container:not([class*='open-overflow-menu']):not([class*='open-hamburger-menu']) .clr-vertical-nav.is-collapsed {
     width: 2rem;
     min-width: 2rem;
@@ -6453,27 +6459,23 @@ header,
       text-overflow: ellipsis;
       border-radius: 0.125rem 0 0 0.125rem;
       color: #565656; }
-      .main-container .subnav.clr-nav-level-1 .nav .nav-link:hover, .main-container .subnav.clr-nav-level-1 .nav .nav-link.active,
-      .main-container .sub-nav.clr-nav-level-1 .nav .nav-link:hover,
+      .main-container .subnav.clr-nav-level-1 .nav .nav-link.active,
       .main-container .sub-nav.clr-nav-level-1 .nav .nav-link.active,
-      .main-container .subnav.clr-nav-level-2 .nav .nav-link:hover,
       .main-container .subnav.clr-nav-level-2 .nav .nav-link.active,
-      .main-container .sub-nav.clr-nav-level-2 .nav .nav-link:hover,
       .main-container .sub-nav.clr-nav-level-2 .nav .nav-link.active {
         color: #565656;
         background-color: #fff; }
-        .main-container .subnav.clr-nav-level-1 .nav .nav-link:hover .nav-icon, .main-container .subnav.clr-nav-level-1 .nav .nav-link.active .nav-icon,
-        .main-container .sub-nav.clr-nav-level-1 .nav .nav-link:hover .nav-icon,
+        .main-container .subnav.clr-nav-level-1 .nav .nav-link.active .nav-icon,
         .main-container .sub-nav.clr-nav-level-1 .nav .nav-link.active .nav-icon,
-        .main-container .subnav.clr-nav-level-2 .nav .nav-link:hover .nav-icon,
         .main-container .subnav.clr-nav-level-2 .nav .nav-link.active .nav-icon,
-        .main-container .sub-nav.clr-nav-level-2 .nav .nav-link:hover .nav-icon,
         .main-container .sub-nav.clr-nav-level-2 .nav .nav-link.active .nav-icon {
           fill: #0079b8; }
       .main-container .subnav.clr-nav-level-1 .nav .nav-link:hover,
       .main-container .sub-nav.clr-nav-level-1 .nav .nav-link:hover,
       .main-container .subnav.clr-nav-level-2 .nav .nav-link:hover,
       .main-container .sub-nav.clr-nav-level-2 .nav .nav-link:hover {
+        color: #565656;
+        background-color: #ccc;
         text-decoration: none; }
       .main-container .subnav.clr-nav-level-1 .nav .nav-link:hover, .main-container .subnav.clr-nav-level-1 .nav .nav-link.active,
       .main-container .sub-nav.clr-nav-level-1 .nav .nav-link:hover,
@@ -6555,22 +6557,20 @@ header,
     .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-2 .nav-link .nav-icon + .nav-text, .main-container.open-overflow-menu .header .header-nav.clr-nav-level-1 .nav-link .nav-icon + .nav-text,
     .main-container.open-overflow-menu .header .header-nav.clr-nav-level-2 .nav-link .nav-icon + .nav-text {
       display: inline-block; }
-    .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-1 .nav-link:hover, .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-1 .nav-link.active,
-    .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-2 .nav-link:hover,
-    .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-2 .nav-link.active, .main-container.open-overflow-menu .header .header-nav.clr-nav-level-1 .nav-link:hover, .main-container.open-overflow-menu .header .header-nav.clr-nav-level-1 .nav-link.active,
-    .main-container.open-overflow-menu .header .header-nav.clr-nav-level-2 .nav-link:hover,
+    .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-1 .nav-link.active,
+    .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-2 .nav-link.active, .main-container.open-overflow-menu .header .header-nav.clr-nav-level-1 .nav-link.active,
     .main-container.open-overflow-menu .header .header-nav.clr-nav-level-2 .nav-link.active {
       color: #565656;
       background-color: #fff; }
-      .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-1 .nav-link:hover .nav-icon, .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-1 .nav-link.active .nav-icon,
-      .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-2 .nav-link:hover .nav-icon,
-      .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-2 .nav-link.active .nav-icon, .main-container.open-overflow-menu .header .header-nav.clr-nav-level-1 .nav-link:hover .nav-icon, .main-container.open-overflow-menu .header .header-nav.clr-nav-level-1 .nav-link.active .nav-icon,
-      .main-container.open-overflow-menu .header .header-nav.clr-nav-level-2 .nav-link:hover .nav-icon,
+      .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-1 .nav-link.active .nav-icon,
+      .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-2 .nav-link.active .nav-icon, .main-container.open-overflow-menu .header .header-nav.clr-nav-level-1 .nav-link.active .nav-icon,
       .main-container.open-overflow-menu .header .header-nav.clr-nav-level-2 .nav-link.active .nav-icon {
         fill: #0079b8; }
     .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-1 .nav-link:hover,
     .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-2 .nav-link:hover, .main-container.open-overflow-menu .header .header-nav.clr-nav-level-1 .nav-link:hover,
     .main-container.open-overflow-menu .header .header-nav.clr-nav-level-2 .nav-link:hover {
+      color: #565656;
+      background-color: #ccc;
       text-decoration: none; }
     .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-1 .nav-link.active > .nav-text,
     .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-2 .nav-link.active > .nav-text, .main-container.open-overflow-menu .header .header-nav.clr-nav-level-1 .nav-link.active > .nav-text,
