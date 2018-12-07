@@ -9981,7 +9981,8 @@ _:-ms-input-placeholder .clr-treenode-content .label,
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+      z-index: 600; }
       .datagrid-footer .column-switch-wrapper .column-switch .switch-header {
         display: -ms-flexbox;
         display: flex;
