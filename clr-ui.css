@@ -8467,7 +8467,8 @@ select[size] {
   flex: 1 1 auto;
   width: 100%; }
 
-.calendar-cell {
+.calendar-cell,
+.calendar-table .calendar-cell {
   height: 1.5rem;
   width: 1.5rem;
   min-height: 1.5rem;
