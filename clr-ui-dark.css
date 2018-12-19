@@ -10243,14 +10243,6 @@ _:-ms-input-placeholder .clr-treenode-content .label,
         vertical-align: middle; }
     .datagrid-footer .pagination-description {
       white-space: nowrap; }
-    .datagrid-footer .pagination-description::after, .datagrid-footer .pagination-size::after {
-      content: '';
-      display: inline-block;
-      height: 1rem;
-      width: 0.041667rem;
-      background-color: #485764;
-      margin: 0 0.5rem;
-      vertical-align: middle; }
     .datagrid-footer .pagination-list {
       margin: 0 0.5rem;
       height: calc(1.5rem - 2px);
@@ -10258,6 +10250,14 @@ _:-ms-input-placeholder .clr-treenode-content .label,
       display: flex;
       -ms-flex-align: center;
       align-items: center; }
+      .datagrid-footer .pagination-list::before {
+        content: '';
+        display: inline-block;
+        height: 1rem;
+        width: 0.041667rem;
+        background-color: #485764;
+        margin-right: 0.5rem;
+        vertical-align: middle; }
   .datagrid-footer .column-switch-wrapper {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto; }
