@@ -9973,23 +9973,31 @@ _:-ms-input-placeholder .clr-treenode-content .label,
         height: 1rem;
         line-height: 1rem;
         vertical-align: middle; }
-    .datagrid-footer .pagination-description {
-      white-space: nowrap; }
-    .datagrid-footer .pagination-list {
-      margin: 0 0.5rem;
-      height: calc(1.5rem - 2px);
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-align: center;
-      align-items: center; }
-      .datagrid-footer .pagination-list::before {
+      .datagrid-footer .pagination-size + .pagination-description:before {
         content: '';
         display: inline-block;
         height: 1rem;
         width: 0.041667rem;
         background-color: #ddd;
-        margin-right: 0.5rem;
+        margin: 0 0.5rem;
         vertical-align: middle; }
+    .datagrid-footer .pagination-description {
+      white-space: nowrap; }
+      .datagrid-footer .pagination-description + .pagination-list:before {
+        content: '';
+        display: inline-block;
+        height: 1rem;
+        width: 0.041667rem;
+        background-color: #ddd;
+        margin: 0 0.5rem;
+        vertical-align: middle; }
+    .datagrid-footer .pagination-list {
+      margin-right: 0.5rem;
+      height: calc(1.5rem - 2px);
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center; }
   .datagrid-footer .column-switch-wrapper {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto; }
