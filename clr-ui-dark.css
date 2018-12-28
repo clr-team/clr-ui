@@ -10084,31 +10084,22 @@ _:-ms-input-placeholder .clr-treenode-content .label,
         left: 0;
         background-color: #485764; }
       .datagrid-table .datagrid-column .datagrid-column-separator .datagrid-column-handle {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;
-        -o-appearance: none;
-        margin: 0;
-        padding: 0;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-        background: none;
-        display: block;
         position: absolute;
         width: calc(0.5rem + 0.041667rem);
-        right: -0.5rem;
+        right: -0.25rem;
         top: -0.25rem;
         cursor: col-resize;
         height: calc(100% + 0.5rem - 1px);
         z-index: 500; }
-      .datagrid-table .datagrid-column .datagrid-column-separator .datagrid-column-handle-tracker {
+      .datagrid-table .datagrid-column .datagrid-column-separator .datagrid-column-resize-tracker {
         position: absolute;
-        right: 0;
         top: -0.5rem;
         display: none;
-        width: 0;
-        border-right: 1px dotted #89cbdf; }
+        width: 1px;
+        height: 0;
+        border-right: 1px dotted #89cbdf;
+        transform: translateX(0px);
+        cursor: col-resize; }
       .datagrid-table .datagrid-column .datagrid-column-separator .exceeded-max {
         border-right: 1px dotted rgba(225, 34, 0, 0.3); }
     .datagrid-table .datagrid-column .datagrid-signpost-trigger .signpost {
@@ -10357,9 +10348,6 @@ _:-ms-input-placeholder .clr-treenode-content .label,
 .datagrid-compact .datagrid-column .datagrid-column-separator::after {
   height: calc(100% + 0.5 * 0.5rem - 1px);
   top: calc(-0.25 * 0.5rem + 1px); }
-
-.datagrid-compact .datagrid-column .datagrid-column-separator .datagrid-column-handle-tracker {
-  top: -0.25rem; }
 
 .datagrid-compact .datagrid-cell clr-icon {
   margin-top: calc(-0.125rem - 1px);
