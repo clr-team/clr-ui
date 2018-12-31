@@ -7468,8 +7468,8 @@ _:-ms-input-placeholder .progress-block > label,
 
 .table-compact th,
 .table-compact td {
-  padding-top: calc(0.208334rem + 1px);
-  padding-bottom: calc(0.208334rem); }
+  padding-top: calc(0.208333rem + 1px);
+  padding-bottom: calc(0.208333rem); }
 
 .table.table-vertical thead th {
   border: 0 none;
@@ -7536,13 +7536,13 @@ _:-ms-input-placeholder .progress-block > label,
 
 .table.table-compact th,
 .table.table-compact td {
-  padding-top: calc(0.208334rem + 1px);
-  padding-bottom: 0.208334rem; }
+  padding-top: calc(0.208333rem + 1px);
+  padding-bottom: 0.208333rem; }
 
 .table.table-compact.table-noborder th,
 .table.table-compact.table-noborder td {
-  padding-top: calc(0.208334rem + 2px);
-  padding-bottom: calc(0.208334rem + 1px); }
+  padding-top: calc(0.208333rem + 2px);
+  padding-bottom: calc(0.208333rem + 1px); }
 
 .tooltip {
   display: inline-block;
@@ -9694,8 +9694,8 @@ _:-ms-input-placeholder .clr-treenode-content .label,
 
 .datagrid-compact .datagrid-column,
 .datagrid-compact .datagrid-cell {
-  padding-top: calc(0.208334rem + 1px);
-  padding-bottom: calc(0.208334rem); }
+  padding-top: calc(0.208333rem + 1px);
+  padding-bottom: calc(0.208333rem); }
 
 .datagrid-host {
   display: -ms-flexbox;
@@ -10378,8 +10378,8 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   .datagrid-compact .datagrid-expandable-caret.datagrid-cell {
     padding: 0; }
   .datagrid-compact .datagrid-expandable-caret.datagrid-column {
-    padding-top: calc(0.208334rem + 1px);
-    padding-bottom: calc(0.208334rem); }
+    padding-top: calc(0.208333rem + 1px);
+    padding-bottom: calc(0.208333rem); }
 
 .datagrid-compact .datagrid-signpost-trigger .signpost .signpost-trigger clr-icon {
   width: 0.875rem;
