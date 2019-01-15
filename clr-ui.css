@@ -9913,6 +9913,8 @@ _:-ms-input-placeholder .clr-treenode-content .label,
 .datagrid-row-replaced .datagrid-row-detail .datagrid-cell {
   display: block;
   padding-top: 11px; }
+  .datagrid-row-replaced .datagrid-row-detail .datagrid-cell--hidden {
+    display: none; }
 
 .datagrid-row-replaced .datagrid-row-detail .datagrid-expandable-caret {
   padding-top: 2px; }
