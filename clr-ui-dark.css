@@ -1,12 +1,279 @@
 @charset "UTF-8";
 /*!
- * Copyright (c) 2016-2017 VMware, Inc. All Rights Reserved.
+ * Copyright (c) 2016-2019 VMware, Inc. All Rights Reserved.
  * This software is released under MIT license.
  * The full license information can be found in LICENSE in the root directory of this project.
  *
  * Clarity v@VERSION | MIT license | https://github.com/vmware/clarity
  *
  */
+/*********
+ * Global variables will have an effect on or in multiple Clarity components.
+ * Where possible, there is a list files affected by the variable.
+ */
+/*********
+ * $clr-global-app-background
+ * Change the background for the clarity application.
+ * Usage: clarity-root/src/clr-angular/layout/main-container/_layout.clarity.scss
+ * Affects:
+ * - $clr-login-background-color
+ * - $clr-stack-view-bg-color
+ * - $clr-stack-view-stack-block-label-and-content-bg-color
+ */
+/*********
+  * $clr-global-selection-color
+  * Components that have a selected (or active) state use this to change the background-color when an item or element
+  * is in the active state.
+  * Usages:
+  * - _layout.clarity.scss
+  * - _datagrid.clarity.scss
+  * - _sidenav.clarity.scss
+  *
+  * Component's with variables affected in the dark theme (this file)
+  * - Stack View
+  * - Tree View
+  * - Dropdown
+  */
+/*********
+  * $clr-global-hover-bg-color
+  * Components or elements that can be hovered will have this color applied to their background-color.
+  * Component's with variables affected in the dark theme (this file)
+  * - Dropdown
+  * - Tree View
+  */
+/*********
+  * The close class is a utility class that can be applied to elements with a clr-icon thats used for closing something.
+  * There are two variables that control the normal and hovered states.
+  * Usages:
+  * - _close.clarity.scss
+  *
+  * Component's with variables affected in the dark theme (this file)
+  * - ??
+  */
+/*********
+  * Name: Popover box-shadow-color
+  * Usages: ./_dropdown.clarity.scss
+  * Usages: ./_datepicker.clarity.scss
+  */
+/*********
+  * Name: Link (and link state colors)
+  * Description the color for links and the active, hovered and visited state
+  * Usages: ./_reboot.clarity.scss
+  */
+/**********
+  * Alerts
+  * Alerts are banners that communicate a message with a severity attached to it. They grab the user’s attention to
+  * provide critical information needed in context. These variables control the background-color and font color for each
+  * of the alert types.
+  *
+  * There are seven types of alert and we set the background-color and font color for each here.
+  * Usage: ./_maps.clarity.scss
+  */
+/**********
+  * END: Alerts
+  */
+/*****************
+  * Badge
+  * Badges provide a method to highlight a count of an element either next to it or inside the element itself.
+  * Here you can set the background-color and font color(s) for the various badge types.
+  * There are five color options and four status types a Clarity label may have.
+  *
+  * Usage: ./_maps.clarity.scss
+  */
+/*****************
+  * Buttons
+  * Buttons allow an application to communicate action and direct user intent.
+  * Buttons can be: solid, outlined or flat.
+  * Solid and outline have four types: primary, success, warning, danger.
+  * Buttons can be disabled.
+  *
+  * For each button type, use these variables to change the following button properties:
+  * - background color
+  * - border
+  * - (font) color
+  * - :hover background-color
+  * - :hover (font) color
+  * - box-shadow color
+  *
+  *  NOTE: these variables also affect button groups.
+  *
+  * Usage: ./_maps.clarity.scss
+  */
+/**********
+  * Card
+  * A card presents high-level information and can guide the user toward related actions and details. Use these variables
+  * to change the look and feel of your cards.
+  *
+  * Usage: ../layout/_card.clarity.scss
+  */
+/**********
+  * Datagrid
+  * Datagrids are for organizing large volumes of data that users can scan, compare, and perform actions on.
+  *
+  * Usage: ../data/datagrid/_datagrid.clarity.scss
+  */
+/*********
+  * Dropdown
+  * A dropdown menu allows the user to choose an option or action from a contextual list. Use these variables to change
+  * the look-n-feel of your dropdowns.
+  *
+  * Usage: ../popover/dropdown/_dropdown.clarity.scss
+  */
+/**********
+  * Forms (Deprecated)
+  * A form is a structured layout of related input components.
+  * There are a variety of variables used to change form elements, including:
+  * - Input
+  * - Select
+  * - Checkbox
+  * - Radio
+  * - Toggle
+  *
+  * Usage:
+  * - ../forms-deprecated/_forms.clarity.scss
+  * - ../forms-deprecated/_select.clarity.scss
+  * - ../forms-deprecated/_radio.clarity.scss
+  * - ../forms-deprecated/_checkboxes.clarity.scss
+  * - ../button/_toggles.clarity.scss
+  */
+/******
+  * Forms: TODO: track down component usages and names
+  * A form is a structured layout of related input components.
+  * There are a variety of variables used to change form elements, including:
+  *
+  * Usage:
+  * ../forms/styles/_checkbox.clarity.scss
+  * ../forms/styles/_containers.clarity.scss
+  * ../forms/styles/_file.clarity.scss
+  * ../forms/styles/_form.clarity.scss
+  * ../forms/styles/_input.clarity.scss
+  * ../forms/styles/_input-group.clarity.scss
+  * ../forms/styles/_mixings.forms.scss
+  * ../forms/styles/radio.clarity.scss
+  * ../forms/styles/_select.clarity.scss
+  * ../forms/styles/_textarea.clarity.scss
+  * ../forms/styles/_variables.clarity.scss
+  *
+  */
+/**********
+  * Header
+  * Headers provide branding, navigation, search, and access to global application actions such as settings and
+  * notifications. There are five header colors in the dark theme.
+  *
+  * Usage: ../layout/nav/_header.clarity.scss
+  * -
+  */
+/*****************
+  * Label
+  * Labels show concise metadata in a compact format. Here you can set the background-color and font color(s) for the
+  * different types of labels.
+  *
+  * There are five color options and four status types a Clarity label may have.
+ 
+  * Usage: ./_maps.clarity.scss
+  */
+/********
+  * Login
+  * The login page is a predefined form for applications that require authentication.
+  * use these variables to set the background-color and the svg used for the bacground image.
+  *
+  * Usage:
+  * - ../layout/_login.clarity.scss
+  * - ../image/_icons.clarity.scss (login background image)
+  */
+/**********
+  * Modal
+  * Modals provide information or help a user complete a task.
+  *
+  * Usage: ../modal/_modal.clarity.scss
+  */
+/***************
+  * Nav
+  * A sound navigation layout offers a high degree of discoverability and feedback, letting users know where they are at
+  * all times and ensuring they can easily get to where they want to go.
+  *
+  * The variables in this section control the following navigation components
+  * - Responsive nav
+  * - Side nav
+  * - Sub nav
+  *
+  * Usage:
+  * - ../layout/nav/_responsive-nav.clarity.scss
+  * - ../layout/nav/_sidenav-nav.clarity.scss
+  * - ../layout/nav/_subnav.clarity.scss
+  */
+/**************
+  * Progress Bars
+  * A progress bar is a linear indicator for providing feedback about an ongoing, user-initiated process.
+  *
+  * Usage: ../progress/progress-bars/_progress-bars./clarity.scss
+  */
+/*********
+  * Signpost
+  * The signpost is a convenient, lightweight way to show contextual help of information without taking the user out of
+  * the current context.
+  *
+  * Usage: ../popover/signpost/signposts.clarity.scss
+  */
+/*********
+  * Spinner
+  * A spinner is visual indicator of an ongoing, user-initiated process.
+  *
+  * Usage: ../progress/spinner/_spinner.clarity.scss
+  */
+/*********
+  * Stack View
+  * A stack view displays key/value pairs, which users can expand to show more detail.
+  *
+  * Usage: ../data/stack-view/_stack-view.clarity.scss
+  */
+/**********
+  * Table
+  * Use the table styles wherever you need to present static data in a tabular format.
+  *
+  * Usage:
+  * - ../data/_tables.clarity.scss
+  * - ../data/datagrid/_datagrid.clarity.scss
+  */
+/**********
+  * Tabs
+  * Tabs divide content into separate views which users navigate between.
+  *
+  * Usage: ../layout/nav/_nav.clarity.scss
+  */
+/**********
+  * Tooltip
+  * A tooltip provides a short description of a UI element.
+  *
+  * Usage: ../popover/tooltip/_tooltips.clarity.scss
+  */
+/**********
+  * Tree View
+  * A tree is a hierarchical component that shows the visual representation of the parent-child relationship between
+  * nodes.
+  *
+  * Usage: ../data/tree-view/_tree-view.clarity.scss
+  */
+/**********
+  * Typography
+  * Clarity uses the geometric sans-serif font, Metropolis.
+  *
+  * Usage:
+  * - ../typography/_typography.clarity.scss
+  * - ../data/datagrid/_datagrid.clarity.scss
+  */
+/**********
+  * Vertical Nav
+  * This is a vertically-aligned navigational component.
+  *
+  * Usage: ../layout/vertical-nav/_vertical-nav.clarity.scss
+  */
+/**********
+  * Wizard
+  * Wizards provide a way to go through a sequence of steps that form an end to end workflow..
+  *
+  * Usage: ../wizard/_wizard.clarity.scss
+  */
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -763,278 +1030,28 @@ textarea {
     -ms-grid-row-align: stretch !important;
     align-self: stretch !important; } }
 
+/* TODO: Determine if this should be deprecated and removed.*/
 /**
- * Copyright (c) 2016-2017 VMware, Inc. All Rights Reserved.
+ * Copyright (c) 2016-2019 VMware, Inc. All Rights Reserved.
  * This software is released under MIT license.
  * The full license information can be found in LICENSE in the root directory of this project.
  */
-/*********
- * Global variables will have an effect on or in multiple Clarity components.
- * Where possible, there is a list files affected by the variable.
- */
-/*********
- * $clr-global-app-background
- * Change the background for the clarity application.
- * Usage: clarity-root/src/clr-angular/layout/main-container/_layout.clarity.scss
- * Affects:
- * - $clr-login-background-color
- * - $clr-stack-view-bg-color
- * - $clr-stack-view-stack-block-label-and-content-bg-color
- */
-/*********
- * $clr-global-selection-color
- * Components that have a selected (or active) state use this to change the background-color when an item or element
- * is in the active state.
- * Usages:
- * - _layout.clarity.scss
- * - _datagrid.clarity.scss
- * - _sidenav.clarity.scss
- *
- * Component's with variables affected in the dark theme (this file)
- * - Stack View
- * - Tree View
- * - Dropdown
- */
-/*********
- * $clr-global-hover-bg-color
- * Components or elements that can be hovered will have this color applied to their background-color.
- * Component's with variables affected in the dark theme (this file)
- * - Dropdown
- * - Tree View
- */
-/*********
- * The close class is a utility class that can be applied to elements with a clr-icon thats used for closing something.
- * There are two variables that control the normal and hovered states.
- * Usages:
- * - _close.clarity.scss
- *
- * Component's with variables affected in the dark theme (this file)
- * - ??
- */
-/*********
- * Name: Popover box-shadow-color
- * Usages: ./_dropdown.clarity.scss
- * Usages: ./_datepicker.clarity.scss
- */
-/*********
- * Name: Link (and link state colors)
- * Description the color for links and the active, hovered and visited state
- * Usages: ./_reboot.clarity.scss
- */
-/**********
- * Alerts
- * Alerts are banners that communicate a message with a severity attached to it. They grab the user’s attention to
- * provide critical information needed in context. These variables control the background-color and font color for each
- * of the alert types.
- *
- * There are seven types of alert and we set the background-color and font color for each here.
- * Usage: ./_maps.clarity.scss
- */
-/**********
- * END: Alerts
- */
-/*****************
- * Badge
- * Badges provide a method to highlight a count of an element either next to it or inside the element itself.
- * Here you can set the background-color and font color(s) for the various badge types.
- * There are five color options and four status types a Clarity label may have.
- *
- * Usage: ./_maps.clarity.scss
- */
-/*****************
- * Buttons
- * Buttons allow an application to communicate action and direct user intent.
- * Buttons can be: solid, outlined or flat.
- * Solid and outline have four types: primary, success, warning, danger.
- * Buttons can be disabled.
- *
- * For each button type, use these variables to change the following button properties:
- * - background color
- * - border
- * - (font) color
- * - :hover background-color
- * - :hover (font) color
- * - box-shadow color
- *
- *  NOTE: these variables also affect button groups.
- *
- * Usage: ./_maps.clarity.scss
- */
-/**********
- * Card
- * A card presents high-level information and can guide the user toward related actions and details. Use these variables
- * to change the look and feel of your cards.
- *
- * Usage: ../layout/_card.clarity.scss
- */
-/**********
- * Datagrid
- * Datagrids are for organizing large volumes of data that users can scan, compare, and perform actions on.
- *
- * Usage: ../data/datagrid/_datagrid.clarity.scss
- */
-/*********
- * Dropdown
- * A dropdown menu allows the user to choose an option or action from a contextual list. Use these variables to change
- * the look-n-feel of your dropdowns.
- *
- * Usage: ../popover/dropdown/_dropdown.clarity.scss
- */
-/******
- * Forms: TODO: track down component usages and names
- * A form is a structured layout of related input components.
- * There are a variety of variables used to change form elements, including:
- *
- * Usage:
- * ../forms/styles/_checkbox.clarity.scss
- * ../forms/styles/_containers.clarity.scss
- * ../forms/styles/_file.clarity.scss
- * ../forms/styles/_form.clarity.scss
- * ../forms/styles/_input.clarity.scss
- * ../forms/styles/_input-group.clarity.scss
- * ../forms/styles/_mixings.forms.scss
- * ../forms/styles/radio.clarity.scss
- * ../forms/styles/_select.clarity.scss
- * ../forms/styles/_textarea.clarity.scss
- * ../forms/styles/_variables.clarity.scss
- *
- */
-/**********
- * Forms (Deprecated)
- * A form is a structured layout of related input components.
- * There are a variety of variables used to change form elements, including:
- * - Input
- * - Select
- * - Checkbox
- * - Radio
- * - Toggle
- *
- * Usage:
- * - ../forms-deprecated/_forms.clarity.scss
- * - ../forms-deprecated/_select.clarity.scss
- * - ../forms-deprecated/_radio.clarity.scss
- * - ../forms-deprecated/_checkboxes.clarity.scss
- * - ../button/_toggles.clarity.scss
- */
-/**********
- * Header
- * Headers provide branding, navigation, search, and access to global application actions such as settings and
- * notifications. There are five header colors in the dark theme.
- *
- * Usage: ../layout/nav/_header.clarity.scss
- * -
- */
-/*****************
- * Label
- * Labels show concise metadata in a compact format. Here you can set the background-color and font color(s) for the
- * different types of labels.
- *
- * There are five color options and four status types a Clarity label may have.
+a.link-normal:link {
+  color: #49afd9;
+  text-decoration: none; }
 
- * Usage: ./_maps.clarity.scss
- */
-/********
- * Login
- * The login page is a predefined form for applications that require authentication.
- * use these variables to set the background-color and the svg used for the bacground image.
- *
- * Usage:
- * - ../layout/_login.clarity.scss
- * - ../image/_icons.clarity.scss (login background image)
- */
-/**********
- * Modal
- * Modals provide information or help a user complete a task.
- *
- * Usage: ../modal/_modal.clarity.scss
- */
-/***************
- * Nav
- * A sound navigation layout offers a high degree of discoverability and feedback, letting users know where they are at
- * all times and ensuring they can easily get to where they want to go.
- *
- * The variables in this section control the following navigation components
- * - Responsive nav
- * - Side nav
- * - Sub nav
- *
- * Usage:
- * - ../layout/nav/_responsive-nav.clarity.scss
- * - ../layout/nav/_sidenav-nav.clarity.scss
- * - ../layout/nav/_subnav.clarity.scss
- */
-/**************
- * Progress Bars
- * A progress bar is a linear indicator for providing feedback about an ongoing, user-initiated process.
- *
- * Usage: ../progress/progress-bars/_progress-bars./clarity.scss
- */
-/*********
- * Signpost
- * The signpost is a convenient, lightweight way to show contextual help of information without taking the user out of
- * the current context.
- *
- * Usage: ../popover/signpost/signposts.clarity.scss
- */
-/*********
- * Spinner
- * A spinner is visual indicator of an ongoing, user-initiated process.
- *
- * Usage: ../progress/spinner/_spinner.clarity.scss
- */
-/*********
- * Stack View
- * A stack view displays key/value pairs, which users can expand to show more detail.
- *
- * Usage: ../data/stack-view/_stack-view.clarity.scss
- */
-/**********
- * Table
- * Use the table styles wherever you need to present static data in a tabular format.
- *
- * Usage:
- * - ../data/_tables.clarity.scss
- * - ../data/datagrid/_datagrid.clarity.scss
- */
-/**********
- * Tabs
- * Tabs divide content into separate views which users navigate between.
- *
- * Usage: ../layout/nav/_nav.clarity.scss
- */
-/**********
- * Tooltip
- * A tooltip provides a short description of a UI element.
- *
- * Usage: ../popover/tooltip/_tooltips.clarity.scss
- */
-/**********
- * Tree View
- * A tree is a hierarchical component that shows the visual representation of the parent-child relationship between
- * nodes.
- *
- * Usage: ../data/tree-view/_tree-view.clarity.scss
- */
-/**********
- * Typography
- * Clarity uses the geometric sans-serif font, Metropolis.
- *
- * Usage:
- * - ../typography/_typography.clarity.scss
- * - ../data/datagrid/_datagrid.clarity.scss
- */
-/**********
- * Vertical Nav
- * This is a vertically-aligned navigational component.
- *
- * Usage: ../layout/vertical-nav/_vertical-nav.clarity.scss
- */
-/**********
- * Wizard
- * Wizards provide a way to go through a sequence of steps that form an end to end workflow..
- *
- * Usage: ../wizard/_wizard.clarity.scss
- */
+a.link-hovered:link {
+  color: #49afd9;
+  text-decoration: underline; }
+
+a.link-clicked:link {
+  color: #49afd9;
+  text-decoration: underline; }
+
+a.link-visited:link {
+  color: #9aa8e2;
+  text-decoration: none; }
+
 .media {
   display: -ms-flexbox;
   display: flex; }
@@ -1090,7 +1107,7 @@ textarea {
   vertical-align: text-top !important; }
 
 .bg-faded {
-  background-color: #fff; }
+  background-color: #f7f7f9; }
 
 .bg-primary {
   background-color: #0275d8 !important; }
@@ -1795,10 +1812,10 @@ a.text-danger:focus, a.text-danger:hover {
   color: #c9302c !important; }
 
 .text-gray-dark {
-  color: #737373 !important; }
+  color: #373a3c !important; }
 
 a.text-gray-dark:focus, a.text-gray-dark:hover {
-  color: #5a5959 !important; }
+  color: #1f2021 !important; }
 
 .text-hide {
   font: 0/0 a;
@@ -2058,14 +2075,14 @@ button.list-group-item-danger {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1;
-  color: #000;
+  color: #c3ced4;
   text-shadow: 0 1px 0 #fff;
-  opacity: 0.2; }
+  opacity: 1; }
   .close:focus, .close:hover {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
-    opacity: 0.5; }
+    opacity: 1; }
 
 button.close {
   padding: 0;
@@ -2472,9 +2489,9 @@ code.clr-code {
   .btn.disabled, .btn:disabled {
     color: #fff;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: transparent;
-    border-color: #fff;
-    opacity: 0.4; }
+    border-color: #fff; }
 
 .btn-group > .btn clr-icon,
 .btn clr-icon {
@@ -2590,9 +2607,9 @@ code.clr-code {
   .btn-outline-info .btn:disabled {
     color: #fff;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: transparent;
-    border-color: #fff;
-    opacity: 0.4; }
+    border-color: #fff; }
 
 .btn.btn-primary,
 .btn-primary .btn {
@@ -2608,15 +2625,15 @@ code.clr-code {
     color: #000; }
   .btn.btn-primary:active,
   .btn-primary .btn:active {
-    box-shadow: 0 1px 0 0 #0065ab inset; }
+    box-shadow: 0 2px 0 0 #0065ab inset; }
   .btn.btn-primary.disabled, .btn.btn-primary:disabled,
   .btn-primary .btn.disabled,
   .btn-primary .btn:disabled {
     color: #000;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: #fff;
-    border-color: #fff;
-    opacity: 0.4; }
+    border-color: #fff; }
 
 .btn.btn-success,
 .btn-success .btn {
@@ -2638,9 +2655,9 @@ code.clr-code {
   .btn-success .btn:disabled {
     color: #000;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: #fff;
-    border-color: #fff;
-    opacity: 0.4; }
+    border-color: #fff; }
 
 .btn.btn-danger,
 .btn.btn-warning,
@@ -2674,9 +2691,9 @@ code.clr-code {
   .btn-warning .btn:disabled {
     color: #000;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: #fff;
-    border-color: #fff;
-    opacity: 0.4; }
+    border-color: #fff; }
 
 .btn.btn-outline,
 .btn.btn-outline .btn,
@@ -2722,9 +2739,9 @@ code.clr-code {
   .btn-outline .btn:disabled {
     color: #fff;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: transparent;
-    border-color: #fff;
-    opacity: 0.4; }
+    border-color: #fff; }
 
 .btn.btn-success-outline,
 .btn.btn-outline-success,
@@ -2748,7 +2765,7 @@ code.clr-code {
   .btn.btn-outline-success:active,
   .btn-success-outline .btn:active,
   .btn-outline-success .btn:active {
-    box-shadow: 0 1px 0 0 #000 inset; }
+    box-shadow: 0 2px 0 0 #000 inset; }
   .btn.btn-success-outline.disabled, .btn.btn-success-outline:disabled,
   .btn.btn-outline-success.disabled,
   .btn.btn-outline-success:disabled,
@@ -2758,9 +2775,9 @@ code.clr-code {
   .btn-outline-success .btn:disabled {
     color: #fff;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: transparent;
-    border-color: #fff;
-    opacity: 0.4; }
+    border-color: #fff; }
 
 .btn.btn-danger-outline,
 .btn.btn-outline-danger,
@@ -2800,7 +2817,7 @@ code.clr-code {
   .btn-outline-danger .btn:active,
   .btn-warning-outline .btn:active,
   .btn-outline-warning .btn:active {
-    box-shadow: 0 1px 0 0 #000 inset; }
+    box-shadow: 0 2px 0 0 #000 inset; }
   .btn.btn-danger-outline.disabled, .btn.btn-danger-outline:disabled,
   .btn.btn-outline-danger.disabled,
   .btn.btn-outline-danger:disabled,
@@ -2818,9 +2835,9 @@ code.clr-code {
   .btn-outline-warning .btn:disabled {
     color: #fff;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: transparent;
-    border-color: #fff;
-    opacity: 0.4; }
+    border-color: #fff; }
 
 .btn.btn-link,
 .btn-link .btn {
@@ -2836,35 +2853,35 @@ code.clr-code {
     color: #57c7ea; }
   .btn.btn-link:active,
   .btn-link .btn:active {
-    box-shadow: 0 0 0 0 transparent inset; }
+    box-shadow: none; }
   .btn.btn-link.disabled, .btn.btn-link:disabled,
   .btn-link .btn.disabled,
   .btn-link .btn:disabled {
     color: #fff;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: transparent;
-    border-color: transparent;
-    opacity: 0.4; }
+    border-color: transparent; }
 
 .btn.btn-inverse, .alert-app-level .alert-item .btn,
 .btn-inverse .btn,
 .alert-app-level .alert-item .btn .btn {
-  border-color: #000;
+  border-color: #e9ecef;
   background-color: transparent;
-  color: #000; }
+  color: #e9ecef; }
   .btn.btn-inverse:visited, .alert-app-level .alert-item .btn:visited,
   .btn-inverse .btn:visited,
   .alert-app-level .alert-item .btn .btn:visited {
-    color: #000; }
+    color: #e9ecef; }
   .btn.btn-inverse:hover, .alert-app-level .alert-item .btn:hover,
   .btn-inverse .btn:hover,
   .alert-app-level .alert-item .btn .btn:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    color: #000; }
+    color: #fff; }
   .btn.btn-inverse:active, .alert-app-level .alert-item .btn:active,
   .btn-inverse .btn:active,
   .alert-app-level .alert-item .btn .btn:active {
-    box-shadow: 0 1px 0 0 #a9b6be inset; }
+    box-shadow: 0 2px 0 0 #a9b6be inset; }
   .btn.btn-inverse.disabled, .alert-app-level .alert-item .btn.disabled, .btn.btn-inverse:disabled, .alert-app-level .alert-item .btn:disabled,
   .btn-inverse .btn.disabled,
   .alert-app-level .alert-item .btn .btn.disabled,
@@ -2872,9 +2889,9 @@ code.clr-code {
   .alert-app-level .alert-item .btn .btn:disabled {
     color: #fff;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: transparent;
-    border-color: #fff;
-    opacity: 0.4; }
+    border-color: #fff; }
 
 .btn.btn-sm, .alert-app-level .alert-item .btn,
 .btn-sm .btn,
@@ -2895,6 +2912,8 @@ code.clr-code {
   margin: 0.25rem 0.5rem 0.25rem 0; }
   .btn.btn-link {
     margin: 0.25rem 0; }
+  .btn.btn-link.btn-inverse, .alert-app-level .alert-item .btn.btn-link {
+    border-color: transparent; }
 
 .btn-sm:not(.btn-link) clr-icon, .alert-app-level .alert-item .btn:not(.btn-link) clr-icon {
   width: 0.5rem;
@@ -2928,7 +2947,7 @@ code.clr-code {
   .btn-group.btn-success .dropdown-toggle:active,
   .btn-group.btn-warning .dropdown-toggle:active,
   .btn-group.btn-danger .dropdown-toggle:active {
-    box-shadow: 0 1px 0 0 #0065ab inset; }
+    box-shadow: 0 2px 0 0 #0065ab inset; }
   .btn-group.btn-primary .dropdown-toggle.disabled, .btn-group.btn-primary .dropdown-toggle:disabled,
   .btn-group.btn-success .dropdown-toggle.disabled,
   .btn-group.btn-success .dropdown-toggle:disabled,
@@ -2938,9 +2957,9 @@ code.clr-code {
   .btn-group.btn-danger .dropdown-toggle:disabled {
     color: #000;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: #fff;
-    border-color: #fff;
-    opacity: 0.4; }
+    border-color: #fff; }
 
 .btn-group.btn-link .dropdown-toggle {
   border-color: transparent;
@@ -2952,13 +2971,13 @@ code.clr-code {
     background-color: transparent;
     color: #57c7ea; }
   .btn-group.btn-link .dropdown-toggle:active {
-    box-shadow: 0 0 0 0 transparent inset; }
+    box-shadow: none; }
   .btn-group.btn-link .dropdown-toggle.disabled, .btn-group.btn-link .dropdown-toggle:disabled {
     color: #fff;
     cursor: not-allowed;
+    opacity: 0.4;
     background-color: transparent;
-    border-color: transparent;
-    opacity: 0.4; }
+    border-color: transparent; }
 
 .btn-group.btn-sm .btn-group-overflow > .dropdown-toggle, .alert-app-level .alert-item .btn-group.btn .btn-group-overflow > .dropdown-toggle {
   line-height: calc(1rem - 1px);
@@ -3017,7 +3036,7 @@ code.clr-code {
 
 .checkbox.btn.btn-primary input[type='checkbox']:checked + label,
 .checkbox-inline.btn.btn-primary input[type='checkbox']:checked + label {
-  background-color: #000;
+  background-color: #0079b8;
   color: #fff; }
 
 .checkbox.btn.btn-success input[type='checkbox']:checked + label,
@@ -3030,20 +3049,6 @@ code.clr-code {
 .checkbox-inline.btn.btn-warning input[type='checkbox']:checked + label {
   background-color: #c92100;
   color: #000; }
-
-.checkbox.btn.btn-success-outline input[type='checkbox']:checked + label, .checkbox.btn.btn-outline-success input[type='checkbox']:checked + label,
-.checkbox-inline.btn.btn-success-outline input[type='checkbox']:checked + label,
-.checkbox-inline.btn.btn-outline-success input[type='checkbox']:checked + label {
-  background-color: #60b515;
-  color: #fff; }
-
-.checkbox.btn.btn-danger-outline input[type='checkbox']:checked + label, .checkbox.btn.btn-outline-danger input[type='checkbox']:checked + label, .checkbox.btn.btn-warning-outline input[type='checkbox']:checked + label, .checkbox.btn.btn-outline-warning input[type='checkbox']:checked + label,
-.checkbox-inline.btn.btn-danger-outline input[type='checkbox']:checked + label,
-.checkbox-inline.btn.btn-outline-danger input[type='checkbox']:checked + label,
-.checkbox-inline.btn.btn-warning-outline input[type='checkbox']:checked + label,
-.checkbox-inline.btn.btn-outline-warning input[type='checkbox']:checked + label {
-  background-color: #f54f47;
-  color: #fff; }
 
 .checkbox.btn.btn-link input[type='checkbox']:checked + label,
 .checkbox-inline.btn.btn-link input[type='checkbox']:checked + label {
@@ -3080,7 +3085,7 @@ code.clr-code {
 
 .radio.btn.btn-primary input[type='radio']:checked + label,
 .radio.btn.btn-primary input[type='radio']:checked + label {
-  background-color: #000;
+  background-color: #0079b8;
   color: #fff; }
 
 .radio.btn.btn-success input[type='radio']:checked + label,
@@ -3204,18 +3209,18 @@ code.clr-code {
   font-weight: 200;
   text-shadow: none;
   line-height: inherit;
-  color: #c3ced4;
+  color: #737373;
   opacity: 1; }
   .close clr-icon {
-    fill: #c3ced4; }
+    fill: #737373; }
   .close:focus, .close:hover, .close:active {
     opacity: 1;
-    color: #fff; }
+    color: #000; }
     .close:focus clr-icon, .close:hover clr-icon, .close:active clr-icon {
-      fill: #fff; }
+      fill: #000; }
   .close:focus {
     outline: 0;
-    box-shadow: 0 0 2px 2px #49afd9; }
+    box-shadow: 0 0 2px 2px #6bc1e3; }
 
 .alert-icon {
   height: 1rem;
@@ -3284,30 +3289,150 @@ code.clr-code {
   border: 1px solid transparent; }
   .alert .alert-icon {
     color: #e9ecef; }
+  .alert .alert-actions .dropdown .dropdown-toggle {
+    color: #fff;
+    border-color: #fff; }
+  .alert .alert-action,
+  .alert .dropdown-toggle {
+    color: #fff;
+    border-color: #fff; }
+    .alert .alert-action:focus, .alert .alert-action:hover, .alert .alert-action:active,
+    .alert .dropdown-toggle:focus,
+    .alert .dropdown-toggle:hover,
+    .alert .dropdown-toggle:active {
+      color: #fff;
+      border-color: #fff; }
+    .alert .alert-action:active,
+    .alert .dropdown-toggle:active {
+      box-shadow: 0 1px 0 0 #fff inset; }
+  .alert .close {
+    color: #fff;
+    opacity: 1; }
+    .alert .close clr-icon {
+      fill: #fff; }
+    .alert .close:focus, .alert .close:hover, .alert .close:active {
+      color: #fff;
+      opacity: 1; }
   .alert.alert-info {
     background: #0f6082;
     color: #e9ecef;
     border: 1px solid transparent; }
     .alert.alert-info .alert-icon {
       color: #e9ecef; }
+    .alert.alert-info .alert-actions .dropdown .dropdown-toggle {
+      color: #fff;
+      border-color: #fff; }
+    .alert.alert-info .alert-action,
+    .alert.alert-info .dropdown-toggle {
+      color: #fff;
+      border-color: #fff; }
+      .alert.alert-info .alert-action:focus, .alert.alert-info .alert-action:hover, .alert.alert-info .alert-action:active,
+      .alert.alert-info .dropdown-toggle:focus,
+      .alert.alert-info .dropdown-toggle:hover,
+      .alert.alert-info .dropdown-toggle:active {
+        color: #fff;
+        border-color: #fff; }
+      .alert.alert-info .alert-action:active,
+      .alert.alert-info .dropdown-toggle:active {
+        box-shadow: 0 1px 0 0 #fff inset; }
+    .alert.alert-info .close {
+      color: #fff;
+      opacity: 1; }
+      .alert.alert-info .close clr-icon {
+        fill: #fff; }
+      .alert.alert-info .close:focus, .alert.alert-info .close:hover, .alert.alert-info .close:active {
+        color: #fff;
+        opacity: 1; }
   .alert.alert-success {
     background: #205522;
     color: #e9ecef;
     border: 1px solid transparent; }
     .alert.alert-success .alert-icon {
       color: #e9ecef; }
+    .alert.alert-success .alert-actions .dropdown .dropdown-toggle {
+      color: #fff;
+      border-color: #fff; }
+    .alert.alert-success .alert-action,
+    .alert.alert-success .dropdown-toggle {
+      color: #fff;
+      border-color: #fff; }
+      .alert.alert-success .alert-action:focus, .alert.alert-success .alert-action:hover, .alert.alert-success .alert-action:active,
+      .alert.alert-success .dropdown-toggle:focus,
+      .alert.alert-success .dropdown-toggle:hover,
+      .alert.alert-success .dropdown-toggle:active {
+        color: #fff;
+        border-color: #fff; }
+      .alert.alert-success .alert-action:active,
+      .alert.alert-success .dropdown-toggle:active {
+        box-shadow: 0 1px 0 0 #fff inset; }
+    .alert.alert-success .close {
+      color: #fff;
+      opacity: 1; }
+      .alert.alert-success .close clr-icon {
+        fill: #fff; }
+      .alert.alert-success .close:focus, .alert.alert-success .close:hover, .alert.alert-success .close:active {
+        color: #fff;
+        opacity: 1; }
   .alert.alert-warning {
     background: #7f6509;
     color: #e9ecef;
     border: 1px solid transparent; }
     .alert.alert-warning .alert-icon {
       color: #e9ecef; }
+    .alert.alert-warning .alert-actions .dropdown .dropdown-toggle {
+      color: #fff;
+      border-color: #fff; }
+    .alert.alert-warning .alert-action,
+    .alert.alert-warning .dropdown-toggle {
+      color: #fff;
+      border-color: #fff; }
+      .alert.alert-warning .alert-action:focus, .alert.alert-warning .alert-action:hover, .alert.alert-warning .alert-action:active,
+      .alert.alert-warning .dropdown-toggle:focus,
+      .alert.alert-warning .dropdown-toggle:hover,
+      .alert.alert-warning .dropdown-toggle:active {
+        color: #fff;
+        border-color: #fff; }
+      .alert.alert-warning .alert-action:active,
+      .alert.alert-warning .dropdown-toggle:active {
+        box-shadow: 0 1px 0 0 #fff inset; }
+    .alert.alert-warning .close {
+      color: #fff;
+      opacity: 1; }
+      .alert.alert-warning .close clr-icon {
+        fill: #fff; }
+      .alert.alert-warning .close:focus, .alert.alert-warning .close:hover, .alert.alert-warning .close:active {
+        color: #fff;
+        opacity: 1; }
   .alert.alert-danger {
     background: #882d31;
     color: #e9ecef;
     border: 1px solid transparent; }
     .alert.alert-danger .alert-icon {
       color: #e9ecef; }
+    .alert.alert-danger .alert-actions .dropdown .dropdown-toggle {
+      color: #fff;
+      border-color: #fff; }
+    .alert.alert-danger .alert-action,
+    .alert.alert-danger .dropdown-toggle {
+      color: #fff;
+      border-color: #fff; }
+      .alert.alert-danger .alert-action:focus, .alert.alert-danger .alert-action:hover, .alert.alert-danger .alert-action:active,
+      .alert.alert-danger .dropdown-toggle:focus,
+      .alert.alert-danger .dropdown-toggle:hover,
+      .alert.alert-danger .dropdown-toggle:active {
+        color: #fff;
+        border-color: #fff; }
+      .alert.alert-danger .alert-action:active,
+      .alert.alert-danger .dropdown-toggle:active {
+        box-shadow: 0 1px 0 0 #fff inset; }
+    .alert.alert-danger .close {
+      color: #fff;
+      opacity: 1; }
+      .alert.alert-danger .close clr-icon {
+        fill: #fff; }
+      .alert.alert-danger .close:focus, .alert.alert-danger .close:hover, .alert.alert-danger .close:active {
+        color: #fff;
+        opacity: 1; }
   .alert .alert-item .clr-icon {
     height: 0.75rem;
     width: 0.75rem;
@@ -3327,17 +3452,11 @@ code.clr-code {
       font-size: 0.583333rem;
       line-height: 1rem;
       letter-spacing: normal; }
-    .alert .alert-actions .dropdown .dropdown-toggle {
-      color: #fff; }
   .alert .alert-action:not(:last-child) {
     margin-right: 0.5rem; }
   .alert .alert-action,
   .alert .dropdown-toggle {
-    color: #fff;
     text-decoration: underline; }
-    .alert .alert-action:active,
-    .alert .dropdown-toggle:active {
-      color: #fff; }
   .alert .alert-action button.dropdown-toggle:not(.btn) {
     background: transparent;
     cursor: pointer;
@@ -3374,30 +3493,150 @@ code.clr-code {
   border: 1px solid transparent; }
   .alert-app-level .alert-icon {
     color: #000; }
+  .alert-app-level .alert-actions .dropdown .dropdown-toggle {
+    color: #000;
+    border-color: #000; }
+  .alert-app-level .alert-action,
+  .alert-app-level .dropdown-toggle {
+    color: #000;
+    border-color: #000; }
+    .alert-app-level .alert-action:focus, .alert-app-level .alert-action:hover, .alert-app-level .alert-action:active,
+    .alert-app-level .dropdown-toggle:focus,
+    .alert-app-level .dropdown-toggle:hover,
+    .alert-app-level .dropdown-toggle:active {
+      color: #000;
+      border-color: #000; }
+    .alert-app-level .alert-action:active,
+    .alert-app-level .dropdown-toggle:active {
+      box-shadow: 0 1px 0 0 #000 inset; }
+  .alert-app-level .close {
+    color: #000;
+    opacity: 0.8; }
+    .alert-app-level .close clr-icon {
+      fill: #000; }
+    .alert-app-level .close:focus, .alert-app-level .close:hover, .alert-app-level .close:active {
+      color: #000;
+      opacity: 1; }
   .alert-app-level.alert-info {
     background: #49afd9;
     color: #000;
     border: 1px solid transparent; }
     .alert-app-level.alert-info .alert-icon {
       color: #000; }
+    .alert-app-level.alert-info .alert-actions .dropdown .dropdown-toggle {
+      color: #000;
+      border-color: #000; }
+    .alert-app-level.alert-info .alert-action,
+    .alert-app-level.alert-info .dropdown-toggle {
+      color: #000;
+      border-color: #000; }
+      .alert-app-level.alert-info .alert-action:focus, .alert-app-level.alert-info .alert-action:hover, .alert-app-level.alert-info .alert-action:active,
+      .alert-app-level.alert-info .dropdown-toggle:focus,
+      .alert-app-level.alert-info .dropdown-toggle:hover,
+      .alert-app-level.alert-info .dropdown-toggle:active {
+        color: #000;
+        border-color: #000; }
+      .alert-app-level.alert-info .alert-action:active,
+      .alert-app-level.alert-info .dropdown-toggle:active {
+        box-shadow: 0 1px 0 0 #000 inset; }
+    .alert-app-level.alert-info .close {
+      color: #000;
+      opacity: 0.8; }
+      .alert-app-level.alert-info .close clr-icon {
+        fill: #000; }
+      .alert-app-level.alert-info .close:focus, .alert-app-level.alert-info .close:hover, .alert-app-level.alert-info .close:active {
+        color: #000;
+        opacity: 1; }
   .alert-app-level.alert-danger {
     background: #f54f47;
     color: #000;
     border: 1px solid transparent; }
     .alert-app-level.alert-danger .alert-icon {
       color: #000; }
+    .alert-app-level.alert-danger .alert-actions .dropdown .dropdown-toggle {
+      color: #000;
+      border-color: #000; }
+    .alert-app-level.alert-danger .alert-action,
+    .alert-app-level.alert-danger .dropdown-toggle {
+      color: #000;
+      border-color: #000; }
+      .alert-app-level.alert-danger .alert-action:focus, .alert-app-level.alert-danger .alert-action:hover, .alert-app-level.alert-danger .alert-action:active,
+      .alert-app-level.alert-danger .dropdown-toggle:focus,
+      .alert-app-level.alert-danger .dropdown-toggle:hover,
+      .alert-app-level.alert-danger .dropdown-toggle:active {
+        color: #000;
+        border-color: #000; }
+      .alert-app-level.alert-danger .alert-action:active,
+      .alert-app-level.alert-danger .dropdown-toggle:active {
+        box-shadow: 0 1px 0 0 #000 inset; }
+    .alert-app-level.alert-danger .close {
+      color: #000;
+      opacity: 0.8; }
+      .alert-app-level.alert-danger .close clr-icon {
+        fill: #000; }
+      .alert-app-level.alert-danger .close:focus, .alert-app-level.alert-danger .close:hover, .alert-app-level.alert-danger .close:active {
+        color: #000;
+        opacity: 1; }
   .alert-app-level.alert-warning {
     background: #fdd006;
     color: #000;
     border: 1px solid transparent; }
     .alert-app-level.alert-warning .alert-icon {
       color: #000; }
+    .alert-app-level.alert-warning .alert-actions .dropdown .dropdown-toggle {
+      color: #000;
+      border-color: #000; }
+    .alert-app-level.alert-warning .alert-action,
+    .alert-app-level.alert-warning .dropdown-toggle {
+      color: #000;
+      border-color: #000; }
+      .alert-app-level.alert-warning .alert-action:focus, .alert-app-level.alert-warning .alert-action:hover, .alert-app-level.alert-warning .alert-action:active,
+      .alert-app-level.alert-warning .dropdown-toggle:focus,
+      .alert-app-level.alert-warning .dropdown-toggle:hover,
+      .alert-app-level.alert-warning .dropdown-toggle:active {
+        color: #000;
+        border-color: #000; }
+      .alert-app-level.alert-warning .alert-action:active,
+      .alert-app-level.alert-warning .dropdown-toggle:active {
+        box-shadow: 0 1px 0 0 #000 inset; }
+    .alert-app-level.alert-warning .close {
+      color: #000;
+      opacity: 0.8; }
+      .alert-app-level.alert-warning .close clr-icon {
+        fill: #000; }
+      .alert-app-level.alert-warning .close:focus, .alert-app-level.alert-warning .close:hover, .alert-app-level.alert-warning .close:active {
+        color: #000;
+        opacity: 1; }
   .alert-app-level.alert-success {
     background: #62a420;
-    color: #fff;
+    color: #000;
     border: none; }
     .alert-app-level.alert-success .alert-icon {
-      color: #fff; }
+      color: #000; }
+    .alert-app-level.alert-success .alert-actions .dropdown .dropdown-toggle {
+      color: #000;
+      border-color: #000; }
+    .alert-app-level.alert-success .alert-action,
+    .alert-app-level.alert-success .dropdown-toggle {
+      color: #000;
+      border-color: #000; }
+      .alert-app-level.alert-success .alert-action:focus, .alert-app-level.alert-success .alert-action:hover, .alert-app-level.alert-success .alert-action:active,
+      .alert-app-level.alert-success .dropdown-toggle:focus,
+      .alert-app-level.alert-success .dropdown-toggle:hover,
+      .alert-app-level.alert-success .dropdown-toggle:active {
+        color: #000;
+        border-color: #000; }
+      .alert-app-level.alert-success .alert-action:active,
+      .alert-app-level.alert-success .dropdown-toggle:active {
+        box-shadow: 0 1px 0 0 #000 inset; }
+    .alert-app-level.alert-success .close {
+      color: #000;
+      opacity: 0.8; }
+      .alert-app-level.alert-success .close clr-icon {
+        fill: #000; }
+      .alert-app-level.alert-success .close:focus, .alert-app-level.alert-success .close:hover, .alert-app-level.alert-success .close:active {
+        color: #000;
+        opacity: 1; }
   .alert-app-level .alert-items {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem; }
@@ -3416,15 +3655,10 @@ code.clr-code {
   .alert-app-level .alert-icon-wrapper {
     margin-top: 0.125rem; }
   .alert-app-level .close {
-    color: #000;
-    opacity: 0.8;
     height: 1.5rem;
     overflow: hidden; }
     .alert-app-level .close clr-icon {
-      fill: #000;
       margin-top: -0.208333rem; }
-    .alert-app-level .close:focus, .alert-app-level .close:hover, .alert-app-level .close:active {
-      opacity: 1; }
   .alert-app-level .alert-action,
   .alert-app-level .dropdown-toggle {
     text-decoration: none; }
@@ -3492,19 +3726,19 @@ code.clr-code {
   margin-top: 0.5rem; }
 
 .alerts.alert-info {
-  background: #004a70; }
+  background: #004d8a; }
 
 .alerts.alert-danger {
   background: #a32100; }
 
 .alerts.alert-warning {
-  background: #9e4100; }
+  background: #c47d00; }
 
 .alerts.alert-success {
   background: #1d5100; }
 
 .alerts-pager {
-  color: #fff;
+  color: #000;
   float: left;
   font-size: 0.541667rem;
   letter-spacing: normal;
@@ -6124,7 +6358,7 @@ header,
 .subnav {
   display: -ms-flexbox;
   display: flex;
-  box-shadow: 0 -1px 0 #485764 inset;
+  box-shadow: 0 -1px 0 #ccc inset;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-align: center;
@@ -6287,7 +6521,7 @@ header,
         fill: #fff; }
     .clr-vertical-nav .nav-group-content:hover {
       color: #fff;
-      background-color: #253647;
+      background-color: #29414e;
       text-decoration: none; }
     .clr-vertical-nav .nav-group-content .nav-link {
       -ms-flex: 1 1 auto;
@@ -6369,7 +6603,7 @@ header,
         fill: #fff; }
     .clr-vertical-nav .nav-link:hover {
       color: #fff;
-      background-color: #253647;
+      background-color: #29414e;
       text-decoration: none; }
   .clr-vertical-nav .nav-header {
     padding: 0 0.5rem 0 1rem;
@@ -6424,7 +6658,7 @@ header,
   .clr-vertical-nav .nav-group-content .nav-link.active ~ .nav-group-trigger {
     background-color: #324f61; }
   .clr-vertical-nav .nav-group-content .nav-link:hover ~ .nav-group-trigger {
-    background-color: #253647; }
+    background-color: #29414e; }
   .main-container:not([class*='open-overflow-menu']):not([class*='open-hamburger-menu']) .clr-vertical-nav.is-collapsed {
     width: 2rem;
     min-width: 2rem;
@@ -6661,7 +6895,7 @@ header,
       .main-container .subnav.clr-nav-level-2 .nav .nav-link:hover,
       .main-container .sub-nav.clr-nav-level-2 .nav .nav-link:hover {
         color: #fff;
-        background-color: #253647;
+        background-color: #29414e;
         text-decoration: none; }
       .main-container .subnav.clr-nav-level-1 .nav .nav-link:hover, .main-container .subnav.clr-nav-level-1 .nav .nav-link.active,
       .main-container .sub-nav.clr-nav-level-1 .nav .nav-link:hover,
@@ -6756,7 +6990,7 @@ header,
     .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-2 .nav-link:hover, .main-container.open-overflow-menu .header .header-nav.clr-nav-level-1 .nav-link:hover,
     .main-container.open-overflow-menu .header .header-nav.clr-nav-level-2 .nav-link:hover {
       color: #fff;
-      background-color: #253647;
+      background-color: #29414e;
       text-decoration: none; }
     .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-1 .nav-link.active > .nav-text,
     .main-container.open-hamburger-menu .header .header-nav.clr-nav-level-2 .nav-link.active > .nav-text, .main-container.open-overflow-menu .header .header-nav.clr-nav-level-1 .nav-link.active > .nav-text,
@@ -7854,15 +8088,15 @@ _:-ms-input-placeholder .progress-block > label,
     border-radius: 0.125rem; }
   .clr-checkbox-wrapper input[type='checkbox']:focus + label::before {
     outline: 0;
-    box-shadow: 0 0 2px 2px #49afd9; }
+    box-shadow: 0 0 2px 2px #6bc1e3; }
   .clr-checkbox-wrapper input[type='checkbox'] + label::after {
     position: absolute;
     content: '';
     display: none;
     height: 0.20833342rem;
     width: 0.3333335rem;
-    border-left: 0.08333338rem solid #fff;
-    border-bottom: 0.08333338rem solid #fff;
+    border-left: 0.08333338rem solid #000;
+    border-bottom: 0.08333338rem solid #000;
     top: 0.1666665rem;
     left: 0.16666675rem;
     transform: translate(0, 0.16666675rem) rotate(-45deg);
@@ -8111,7 +8345,7 @@ _:-ms-input-placeholder .progress-block > label,
     outline: 0;
     box-shadow: inset 0 0 0 0.25rem #49afd9, 0 0 2px 2px #6bc1e3; }
   .clr-radio-wrapper.disabled input[type='radio']:checked + label::before {
-    background-color: #ccc;
+    background-color: #000;
     box-shadow: inset 0 0 0 0.25rem #49afd9; }
 
 .clr-error .clr-radio-wrapper input[type='radio'] + label::before {
@@ -8185,7 +8419,7 @@ _:-ms-input-placeholder .progress-block > label,
       cursor: not-allowed; }
     .clr-select-wrapper select option,
     .clr-multiselect-wrapper select option {
-      color: #000; }
+      color: #e9ecef; }
   .clr-select-wrapper select::-ms-expand,
   .clr-multiselect-wrapper select::-ms-expand {
     display: none; }
@@ -8220,19 +8454,19 @@ _:-ms-input-placeholder .progress-block > label,
 select[multiple],
 select[size] {
   padding: 0;
-  background: #fff;
-  border: 1px solid #ccc;
+  background: #22343c;
+  border: 1px solid #000;
   border-radius: 0.125rem;
   height: auto; }
   select[multiple]:hover, select[multiple]:active,
   select[size]:hover,
   select[size]:active {
-    background: #fff;
-    border-color: #ccc; }
+    background: #22343c;
+    border-color: #000; }
   select[multiple] option,
   select[size] option {
     padding: 0.125rem 0.25rem;
-    color: #000; }
+    color: #e9ecef; }
 
 .clr-error select[multiple] {
   border-color: #f54f47; }
@@ -8275,7 +8509,7 @@ select[size] {
   font-size: 0.541667rem; }
   .clr-textarea:focus {
     outline: 0;
-    box-shadow: 0 0 2px 2px #49afd9; }
+    box-shadow: 0 0 2px 2px #6bc1e3; }
 
 .clr-error .clr-textarea {
   border-color: #f54f47; }
@@ -8343,7 +8577,7 @@ select[size] {
   .clr-toggle-wrapper input[type='checkbox']:focus + label::before,
   .toggle-switch input[type='checkbox']:focus + label::before {
     outline: 0;
-    box-shadow: 0 0 2px 2px #49afd9; }
+    box-shadow: 0 0 2px 2px #6bc1e3; }
   .clr-toggle-wrapper input[type='checkbox']:checked + label::before,
   .toggle-switch input[type='checkbox']:checked + label::before {
     border-color: #60b515;
@@ -8523,7 +8757,7 @@ textarea {
   padding: 0.25rem 0.5rem; }
   textarea:focus {
     outline: 0;
-    box-shadow: 0 0 2px 2px #49afd9; }
+    box-shadow: 0 0 2px 2px #6bc1e3; }
 
 .checkbox {
   display: block; }
@@ -8564,7 +8798,7 @@ textarea {
   .checkbox input[type='checkbox']:focus + label::before,
   .checkbox-inline input[type='checkbox']:focus + label::before {
     outline: 0;
-    box-shadow: 0 0 2px 2px #49afd9; }
+    box-shadow: 0 0 2px 2px #6bc1e3; }
   .checkbox input[type='checkbox'] + label::after,
   .checkbox-inline input[type='checkbox'] + label::after {
     position: absolute;
@@ -8572,8 +8806,8 @@ textarea {
     display: none;
     height: 0.20833342rem;
     width: 0.3333335rem;
-    border-left: 0.08333338rem solid white;
-    border-bottom: 0.08333338rem solid white;
+    border-left: 0.08333338rem solid #000;
+    border-bottom: 0.08333338rem solid #000;
     top: 0.1666665rem;
     left: 0.16666675rem;
     transform: translate(0, 0.16666675rem) rotate(-45deg);
@@ -8653,11 +8887,11 @@ textarea {
   .radio input[type='radio']:focus + label::before,
   .radio-inline input[type='radio']:focus + label::before {
     outline: 0;
-    box-shadow: 0 0 2px 2px #49afd9; }
+    box-shadow: 0 0 2px 2px #6bc1e3; }
   .radio input[type='radio']:focus:checked + label::before,
   .radio-inline input[type='radio']:focus:checked + label::before {
     outline: 0;
-    box-shadow: inset 0 0 0 0.25rem #49afd9, 0 0 2px 2px #49afd9; }
+    box-shadow: inset 0 0 0 0.25rem #49afd9, 0 0 2px 2px #6bc1e3; }
   .radio.disabled label,
   .radio-inline.disabled label {
     opacity: 0.5;
@@ -8666,7 +8900,7 @@ textarea {
   .radio.disabled input[type='radio']:checked + label::before,
   .radio-inline.disabled input[type='radio']:checked + label::before {
     background-color: #22343c;
-    box-shadow: inset 0 0 0 0.25rem #8f9ba3; }
+    box-shadow: inset 0 0 0 0.25rem #49afd9; }
 
 .select {
   position: relative; }
@@ -9505,7 +9739,7 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
     position: relative;
     width: 0;
     height: 0;
-    border-top: 0.375rem solid #006a91;
+    border-top: 0.375rem solid #0065ab;
     border-right: 0.375rem solid transparent; }
   .stack-view .stack-block-label {
     outline: none; }
@@ -10533,7 +10767,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   .pagination-list .pagination-previous:disabled,
   .pagination-list .pagination-next:disabled {
     color: #e9ecef;
-    opacity: 0.46; }
+    opacity: 0.56; }
   .pagination-list .pagination-first,
   .pagination-list .pagination-previous {
     margin-right: 0.5rem; }
@@ -10771,7 +11005,7 @@ button.nav-link {
   .clr-wizard .clr-wizard-header-action a {
     color: #737373; }
   .clr-wizard .clr-wizard-header-action:hover, .clr-wizard .clr-wizard-header-action:active, .clr-wizard .clr-wizard-header-action:focus {
-    color: #313131; }
+    color: #000; }
   .clr-wizard .clr-wizard-header-action clr-icon {
     height: 0.916667rem;
     width: 0.916667rem; }
@@ -11302,7 +11536,7 @@ button.nav-link {
     opacity: 0; }
 
 .droppable.draggable-match {
-  border: 1px dashed #b68cd1; }
+  border: 1px dashed #be90d6; }
 
 .droppable.draggable-over {
   border: 1px dashed #660092; }
