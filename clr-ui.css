@@ -3255,6 +3255,7 @@ code.clr-code {
   border-radius: 0;
   box-shadow: none;
   background: none;
+  cursor: pointer;
   color: #fff;
   cursor: pointer; }
 
@@ -9546,6 +9547,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
     box-shadow: none;
     background: none;
     cursor: pointer;
+    cursor: pointer;
     height: 1.25rem;
     width: 1.25rem; }
   .datagrid-expandable-caret .datagrid-expandable-caret-icon {
@@ -9808,6 +9810,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
       box-shadow: none;
       background: none;
       cursor: pointer;
+      cursor: pointer;
       float: right;
       vertical-align: middle;
       width: 0.583333rem;
@@ -9864,6 +9867,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
       border-radius: 0;
       box-shadow: none;
       background: none;
+      cursor: pointer;
       color: #565656;
       text-align: left;
       -ms-flex: 1 1 auto;
@@ -9950,7 +9954,8 @@ _:-ms-input-placeholder .clr-treenode-content .label,
       border: none;
       border-radius: 0;
       box-shadow: none;
-      background: none; }
+      background: none;
+      cursor: pointer; }
       .datagrid-table .datagrid-cell .datagrid-action-toggle:active {
         color: #565656; }
   .datagrid-table .datagrid-placeholder-container {
@@ -10181,6 +10186,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
     border-radius: 0;
     box-shadow: none;
     background: none;
+    cursor: pointer;
     height: 1rem;
     width: 1rem;
     outline-offset: -0.1666667rem; }
@@ -10277,6 +10283,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
     border-radius: 0;
     box-shadow: none;
     background: none;
+    cursor: pointer;
     color: #565656;
     cursor: pointer; }
 
