@@ -5527,7 +5527,8 @@ ol.list-spacer {
           width: 100%; }
           .login-wrapper .login .login-group .clr-control-container .clr-input-wrapper > .clr-input-group {
             max-width: 100%;
-            width: 100%; }
+            width: 100%;
+            padding-right: 0.4rem; }
             .login-wrapper .login .login-group .clr-control-container .clr-input-wrapper > .clr-input-group > .clr-input {
               width: calc(100% - 1rem); }
       .login-wrapper .login .login-group .tooltip-validation {
@@ -8262,7 +8263,7 @@ _:-ms-input-placeholder .progress-block > label,
   background: linear-gradient(to bottom, transparent 95%, #49afd9 95%) no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.2s ease;
-  margin-right: 1rem;
+  padding-right: 1rem;
   max-width: calc(100% - 1rem);
   height: 24px; }
   .clr-input-group:focus, .clr-input-group.clr-focus {
@@ -8291,7 +8292,7 @@ _:-ms-input-placeholder .progress-block > label,
     background: none;
     cursor: pointer;
     color: #49afd9;
-    margin: 0 0.375rem; }
+    padding: 0 0.375rem; }
 
 .clr-form-control-disabled .clr-input-group-icon-action {
   cursor: not-allowed; }
@@ -8301,10 +8302,13 @@ _:-ms-input-placeholder .progress-block > label,
   background: linear-gradient(to bottom, transparent 95%, #f54f47 95%) no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.2s ease;
-  margin-right: 0.25rem; }
+  padding-right: 0.25rem; }
   .clr-error .clr-input-group:focus, .clr-error .clr-input-group.clr-focus {
     border-bottom: 1px solid #f54f47;
     background-size: 100% 100%; }
+
+.clr-form-horizontal .clr-input-group {
+  padding-right: 0; }
 
 .clr-radio-wrapper {
   position: relative;
