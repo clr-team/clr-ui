@@ -9981,7 +9981,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   .datagrid-header .datagrid-row {
     background-color: #fafafa;
     border-top: none;
-    border-bottom: 2px solid #ddd; }
+    border-bottom: 1px solid #ddd; }
     .datagrid-header .datagrid-row .datagrid-row-sticky {
       background-color: #fafafa; }
     .datagrid-header .datagrid-row:hover {
@@ -10254,22 +10254,27 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   display: flex;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-align: stretch;
   align-items: stretch;
-  height: 1.5rem;
   padding: 0 0.5rem;
   line-height: calc(1.5rem - 3px);
   font-size: 0.458333rem;
   background-color: #fafafa;
   border: 1px solid #ccc;
+  border-top: none;
   border-radius: 0 0 0.125rem 0.125rem; }
   .datagrid-footer .pagination {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    line-height: 1.5rem; }
     .datagrid-footer .pagination-size {
       display: block;
       -ms-flex: 1 1 auto;
@@ -10284,27 +10289,12 @@ _:-ms-input-placeholder .clr-treenode-content .label,
         height: 1rem;
         line-height: 1rem;
         vertical-align: middle; }
-      .datagrid-footer .pagination-size + .pagination-description:before {
-        content: '';
-        display: inline-block;
-        height: 1rem;
-        width: 0.04166667rem;
-        background-color: #ddd;
-        margin: 0 0.5rem;
-        vertical-align: middle; }
+      .datagrid-footer .pagination-size + .pagination-description {
+        margin-left: 1rem; }
     .datagrid-footer .pagination-description {
       white-space: nowrap; }
-      .datagrid-footer .pagination-description + .pagination-list:before {
-        content: '';
-        display: inline-block;
-        height: 1rem;
-        width: 0.04166667rem;
-        background-color: #ddd;
-        margin: 0 0.5rem;
-        vertical-align: middle; }
     .datagrid-footer .pagination-list {
-      margin-right: 0.5rem;
-      height: calc(1.5rem - 2px);
+      margin-left: 1rem;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-align: center;
@@ -10441,11 +10431,10 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   height: 0.875rem; }
 
 .datagrid-compact .datagrid-footer {
-  height: 1rem;
   padding: 0 0.5rem;
   line-height: calc(1rem - 0.04166667rem); }
-  .datagrid-compact .datagrid-footer .pagination-list {
-    height: calc(1rem - 2px); }
+  .datagrid-compact .datagrid-footer .pagination {
+    line-height: 1rem; }
   .datagrid-compact .datagrid-footer .column-switch-wrapper .column-toggle--action {
     margin: 0;
     outline-offset: -0.1666667rem; }
