@@ -67,7 +67,6 @@
   * of the alert types.
   *
   * There are seven types of alert and we set the background-color and font color for each here.
-  * Usage: ./_maps.clarity.scss
   */
 /**********
   * END: Alerts
@@ -78,7 +77,6 @@
   * Here you can set the background-color and font color(s) for the various badge types.
   * There are five color options and four status types a Clarity label may have.
   *
-  * Usage: ./_maps.clarity.scss
   */
 /*****************
   * Buttons
@@ -97,7 +95,6 @@
   *
   *  NOTE: these variables also affect button groups.
   *
-  * Usage: ./_maps.clarity.scss
   */
 /**********
   * Card
@@ -170,7 +167,6 @@
   *
   * There are five color options and four status types a Clarity label may have.
  
-  * Usage: ./_maps.clarity.scss
   */
 /********
   * Login
@@ -2308,14 +2304,14 @@ h5 {
   margin-bottom: 0; }
 
 h6 {
+  color: #adbbc4;
   font-weight: 500;
   font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.583333rem;
   letter-spacing: normal;
   line-height: 1rem;
   margin-top: 1rem;
-  margin-bottom: 0;
-  color: #adbbc4; }
+  margin-bottom: 0; }
 
 body {
   color: #adbbc4;
@@ -2323,7 +2319,6 @@ body {
   font-size: 0.583333rem;
   letter-spacing: normal;
   line-height: 1rem;
-  margin-top: 1rem;
   margin-bottom: 0;
   font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   margin-top: 0 !important; }
@@ -2339,6 +2334,7 @@ body p {
 
 body .p0,
 body p.p0 {
+  color: #e9ecef;
   font-weight: 200;
   font-size: 0.833333rem;
   letter-spacing: normal;
@@ -2468,15 +2464,15 @@ code.clr-code {
   text-decoration: none;
   text-transform: uppercase;
   vertical-align: middle;
+  border-color: #49afd9;
+  background-color: transparent;
+  color: #49afd9;
   line-height: 1.5rem;
   letter-spacing: 0.12em;
   font-size: 0.5rem;
   font-weight: 500;
   height: 1.5rem;
-  padding: 0 0.5rem;
-  border-color: #49afd9;
-  background-color: transparent;
-  color: #49afd9; }
+  padding: 0 0.5rem; }
   .btn:hover {
     text-decoration: none; }
   .btn:visited {
@@ -3294,17 +3290,23 @@ code.clr-code {
     border-color: #fff; }
   .alert .alert-action,
   .alert .dropdown-toggle {
-    color: #fff;
-    border-color: #fff; }
+    color: #fff; }
+    .alert .alert-action.btn,
+    .alert .dropdown-toggle.btn {
+      border-color: #fff; }
+      .alert .alert-action.btn:focus, .alert .alert-action.btn:hover, .alert .alert-action.btn:active,
+      .alert .dropdown-toggle.btn:focus,
+      .alert .dropdown-toggle.btn:hover,
+      .alert .dropdown-toggle.btn:active {
+        border-color: #fff; }
+      .alert .alert-action.btn:active,
+      .alert .dropdown-toggle.btn:active {
+        box-shadow: 0 1px 0 0 #fff inset; }
     .alert .alert-action:focus, .alert .alert-action:hover, .alert .alert-action:active,
     .alert .dropdown-toggle:focus,
     .alert .dropdown-toggle:hover,
     .alert .dropdown-toggle:active {
-      color: #fff;
-      border-color: #fff; }
-    .alert .alert-action:active,
-    .alert .dropdown-toggle:active {
-      box-shadow: 0 1px 0 0 #fff inset; }
+      color: #fff; }
   .alert .close {
     color: #fff;
     opacity: 1; }
@@ -3324,17 +3326,23 @@ code.clr-code {
       border-color: #fff; }
     .alert.alert-info .alert-action,
     .alert.alert-info .dropdown-toggle {
-      color: #fff;
-      border-color: #fff; }
+      color: #fff; }
+      .alert.alert-info .alert-action.btn,
+      .alert.alert-info .dropdown-toggle.btn {
+        border-color: #fff; }
+        .alert.alert-info .alert-action.btn:focus, .alert.alert-info .alert-action.btn:hover, .alert.alert-info .alert-action.btn:active,
+        .alert.alert-info .dropdown-toggle.btn:focus,
+        .alert.alert-info .dropdown-toggle.btn:hover,
+        .alert.alert-info .dropdown-toggle.btn:active {
+          border-color: #fff; }
+        .alert.alert-info .alert-action.btn:active,
+        .alert.alert-info .dropdown-toggle.btn:active {
+          box-shadow: 0 1px 0 0 #fff inset; }
       .alert.alert-info .alert-action:focus, .alert.alert-info .alert-action:hover, .alert.alert-info .alert-action:active,
       .alert.alert-info .dropdown-toggle:focus,
       .alert.alert-info .dropdown-toggle:hover,
       .alert.alert-info .dropdown-toggle:active {
-        color: #fff;
-        border-color: #fff; }
-      .alert.alert-info .alert-action:active,
-      .alert.alert-info .dropdown-toggle:active {
-        box-shadow: 0 1px 0 0 #fff inset; }
+        color: #fff; }
     .alert.alert-info .close {
       color: #fff;
       opacity: 1; }
@@ -3354,17 +3362,23 @@ code.clr-code {
       border-color: #fff; }
     .alert.alert-success .alert-action,
     .alert.alert-success .dropdown-toggle {
-      color: #fff;
-      border-color: #fff; }
+      color: #fff; }
+      .alert.alert-success .alert-action.btn,
+      .alert.alert-success .dropdown-toggle.btn {
+        border-color: #fff; }
+        .alert.alert-success .alert-action.btn:focus, .alert.alert-success .alert-action.btn:hover, .alert.alert-success .alert-action.btn:active,
+        .alert.alert-success .dropdown-toggle.btn:focus,
+        .alert.alert-success .dropdown-toggle.btn:hover,
+        .alert.alert-success .dropdown-toggle.btn:active {
+          border-color: #fff; }
+        .alert.alert-success .alert-action.btn:active,
+        .alert.alert-success .dropdown-toggle.btn:active {
+          box-shadow: 0 1px 0 0 #fff inset; }
       .alert.alert-success .alert-action:focus, .alert.alert-success .alert-action:hover, .alert.alert-success .alert-action:active,
       .alert.alert-success .dropdown-toggle:focus,
       .alert.alert-success .dropdown-toggle:hover,
       .alert.alert-success .dropdown-toggle:active {
-        color: #fff;
-        border-color: #fff; }
-      .alert.alert-success .alert-action:active,
-      .alert.alert-success .dropdown-toggle:active {
-        box-shadow: 0 1px 0 0 #fff inset; }
+        color: #fff; }
     .alert.alert-success .close {
       color: #fff;
       opacity: 1; }
@@ -3384,17 +3398,23 @@ code.clr-code {
       border-color: #fff; }
     .alert.alert-warning .alert-action,
     .alert.alert-warning .dropdown-toggle {
-      color: #fff;
-      border-color: #fff; }
+      color: #fff; }
+      .alert.alert-warning .alert-action.btn,
+      .alert.alert-warning .dropdown-toggle.btn {
+        border-color: #fff; }
+        .alert.alert-warning .alert-action.btn:focus, .alert.alert-warning .alert-action.btn:hover, .alert.alert-warning .alert-action.btn:active,
+        .alert.alert-warning .dropdown-toggle.btn:focus,
+        .alert.alert-warning .dropdown-toggle.btn:hover,
+        .alert.alert-warning .dropdown-toggle.btn:active {
+          border-color: #fff; }
+        .alert.alert-warning .alert-action.btn:active,
+        .alert.alert-warning .dropdown-toggle.btn:active {
+          box-shadow: 0 1px 0 0 #fff inset; }
       .alert.alert-warning .alert-action:focus, .alert.alert-warning .alert-action:hover, .alert.alert-warning .alert-action:active,
       .alert.alert-warning .dropdown-toggle:focus,
       .alert.alert-warning .dropdown-toggle:hover,
       .alert.alert-warning .dropdown-toggle:active {
-        color: #fff;
-        border-color: #fff; }
-      .alert.alert-warning .alert-action:active,
-      .alert.alert-warning .dropdown-toggle:active {
-        box-shadow: 0 1px 0 0 #fff inset; }
+        color: #fff; }
     .alert.alert-warning .close {
       color: #fff;
       opacity: 1; }
@@ -3414,17 +3434,23 @@ code.clr-code {
       border-color: #fff; }
     .alert.alert-danger .alert-action,
     .alert.alert-danger .dropdown-toggle {
-      color: #fff;
-      border-color: #fff; }
+      color: #fff; }
+      .alert.alert-danger .alert-action.btn,
+      .alert.alert-danger .dropdown-toggle.btn {
+        border-color: #fff; }
+        .alert.alert-danger .alert-action.btn:focus, .alert.alert-danger .alert-action.btn:hover, .alert.alert-danger .alert-action.btn:active,
+        .alert.alert-danger .dropdown-toggle.btn:focus,
+        .alert.alert-danger .dropdown-toggle.btn:hover,
+        .alert.alert-danger .dropdown-toggle.btn:active {
+          border-color: #fff; }
+        .alert.alert-danger .alert-action.btn:active,
+        .alert.alert-danger .dropdown-toggle.btn:active {
+          box-shadow: 0 1px 0 0 #fff inset; }
       .alert.alert-danger .alert-action:focus, .alert.alert-danger .alert-action:hover, .alert.alert-danger .alert-action:active,
       .alert.alert-danger .dropdown-toggle:focus,
       .alert.alert-danger .dropdown-toggle:hover,
       .alert.alert-danger .dropdown-toggle:active {
-        color: #fff;
-        border-color: #fff; }
-      .alert.alert-danger .alert-action:active,
-      .alert.alert-danger .dropdown-toggle:active {
-        box-shadow: 0 1px 0 0 #fff inset; }
+        color: #fff; }
     .alert.alert-danger .close {
       color: #fff;
       opacity: 1; }
@@ -3498,17 +3524,23 @@ code.clr-code {
     border-color: #000; }
   .alert-app-level .alert-action,
   .alert-app-level .dropdown-toggle {
-    color: #000;
-    border-color: #000; }
+    color: #000; }
+    .alert-app-level .alert-action.btn,
+    .alert-app-level .dropdown-toggle.btn {
+      border-color: #000; }
+      .alert-app-level .alert-action.btn:focus, .alert-app-level .alert-action.btn:hover, .alert-app-level .alert-action.btn:active,
+      .alert-app-level .dropdown-toggle.btn:focus,
+      .alert-app-level .dropdown-toggle.btn:hover,
+      .alert-app-level .dropdown-toggle.btn:active {
+        border-color: #000; }
+      .alert-app-level .alert-action.btn:active,
+      .alert-app-level .dropdown-toggle.btn:active {
+        box-shadow: 0 1px 0 0 #000 inset; }
     .alert-app-level .alert-action:focus, .alert-app-level .alert-action:hover, .alert-app-level .alert-action:active,
     .alert-app-level .dropdown-toggle:focus,
     .alert-app-level .dropdown-toggle:hover,
     .alert-app-level .dropdown-toggle:active {
-      color: #000;
-      border-color: #000; }
-    .alert-app-level .alert-action:active,
-    .alert-app-level .dropdown-toggle:active {
-      box-shadow: 0 1px 0 0 #000 inset; }
+      color: #000; }
   .alert-app-level .close {
     color: #000;
     opacity: 0.8; }
@@ -3528,17 +3560,23 @@ code.clr-code {
       border-color: #000; }
     .alert-app-level.alert-info .alert-action,
     .alert-app-level.alert-info .dropdown-toggle {
-      color: #000;
-      border-color: #000; }
+      color: #000; }
+      .alert-app-level.alert-info .alert-action.btn,
+      .alert-app-level.alert-info .dropdown-toggle.btn {
+        border-color: #000; }
+        .alert-app-level.alert-info .alert-action.btn:focus, .alert-app-level.alert-info .alert-action.btn:hover, .alert-app-level.alert-info .alert-action.btn:active,
+        .alert-app-level.alert-info .dropdown-toggle.btn:focus,
+        .alert-app-level.alert-info .dropdown-toggle.btn:hover,
+        .alert-app-level.alert-info .dropdown-toggle.btn:active {
+          border-color: #000; }
+        .alert-app-level.alert-info .alert-action.btn:active,
+        .alert-app-level.alert-info .dropdown-toggle.btn:active {
+          box-shadow: 0 1px 0 0 #000 inset; }
       .alert-app-level.alert-info .alert-action:focus, .alert-app-level.alert-info .alert-action:hover, .alert-app-level.alert-info .alert-action:active,
       .alert-app-level.alert-info .dropdown-toggle:focus,
       .alert-app-level.alert-info .dropdown-toggle:hover,
       .alert-app-level.alert-info .dropdown-toggle:active {
-        color: #000;
-        border-color: #000; }
-      .alert-app-level.alert-info .alert-action:active,
-      .alert-app-level.alert-info .dropdown-toggle:active {
-        box-shadow: 0 1px 0 0 #000 inset; }
+        color: #000; }
     .alert-app-level.alert-info .close {
       color: #000;
       opacity: 0.8; }
@@ -3558,17 +3596,23 @@ code.clr-code {
       border-color: #000; }
     .alert-app-level.alert-danger .alert-action,
     .alert-app-level.alert-danger .dropdown-toggle {
-      color: #000;
-      border-color: #000; }
+      color: #000; }
+      .alert-app-level.alert-danger .alert-action.btn,
+      .alert-app-level.alert-danger .dropdown-toggle.btn {
+        border-color: #000; }
+        .alert-app-level.alert-danger .alert-action.btn:focus, .alert-app-level.alert-danger .alert-action.btn:hover, .alert-app-level.alert-danger .alert-action.btn:active,
+        .alert-app-level.alert-danger .dropdown-toggle.btn:focus,
+        .alert-app-level.alert-danger .dropdown-toggle.btn:hover,
+        .alert-app-level.alert-danger .dropdown-toggle.btn:active {
+          border-color: #000; }
+        .alert-app-level.alert-danger .alert-action.btn:active,
+        .alert-app-level.alert-danger .dropdown-toggle.btn:active {
+          box-shadow: 0 1px 0 0 #000 inset; }
       .alert-app-level.alert-danger .alert-action:focus, .alert-app-level.alert-danger .alert-action:hover, .alert-app-level.alert-danger .alert-action:active,
       .alert-app-level.alert-danger .dropdown-toggle:focus,
       .alert-app-level.alert-danger .dropdown-toggle:hover,
       .alert-app-level.alert-danger .dropdown-toggle:active {
-        color: #000;
-        border-color: #000; }
-      .alert-app-level.alert-danger .alert-action:active,
-      .alert-app-level.alert-danger .dropdown-toggle:active {
-        box-shadow: 0 1px 0 0 #000 inset; }
+        color: #000; }
     .alert-app-level.alert-danger .close {
       color: #000;
       opacity: 0.8; }
@@ -3588,17 +3632,23 @@ code.clr-code {
       border-color: #000; }
     .alert-app-level.alert-warning .alert-action,
     .alert-app-level.alert-warning .dropdown-toggle {
-      color: #000;
-      border-color: #000; }
+      color: #000; }
+      .alert-app-level.alert-warning .alert-action.btn,
+      .alert-app-level.alert-warning .dropdown-toggle.btn {
+        border-color: #000; }
+        .alert-app-level.alert-warning .alert-action.btn:focus, .alert-app-level.alert-warning .alert-action.btn:hover, .alert-app-level.alert-warning .alert-action.btn:active,
+        .alert-app-level.alert-warning .dropdown-toggle.btn:focus,
+        .alert-app-level.alert-warning .dropdown-toggle.btn:hover,
+        .alert-app-level.alert-warning .dropdown-toggle.btn:active {
+          border-color: #000; }
+        .alert-app-level.alert-warning .alert-action.btn:active,
+        .alert-app-level.alert-warning .dropdown-toggle.btn:active {
+          box-shadow: 0 1px 0 0 #000 inset; }
       .alert-app-level.alert-warning .alert-action:focus, .alert-app-level.alert-warning .alert-action:hover, .alert-app-level.alert-warning .alert-action:active,
       .alert-app-level.alert-warning .dropdown-toggle:focus,
       .alert-app-level.alert-warning .dropdown-toggle:hover,
       .alert-app-level.alert-warning .dropdown-toggle:active {
-        color: #000;
-        border-color: #000; }
-      .alert-app-level.alert-warning .alert-action:active,
-      .alert-app-level.alert-warning .dropdown-toggle:active {
-        box-shadow: 0 1px 0 0 #000 inset; }
+        color: #000; }
     .alert-app-level.alert-warning .close {
       color: #000;
       opacity: 0.8; }
@@ -3618,17 +3668,23 @@ code.clr-code {
       border-color: #000; }
     .alert-app-level.alert-success .alert-action,
     .alert-app-level.alert-success .dropdown-toggle {
-      color: #000;
-      border-color: #000; }
+      color: #000; }
+      .alert-app-level.alert-success .alert-action.btn,
+      .alert-app-level.alert-success .dropdown-toggle.btn {
+        border-color: #000; }
+        .alert-app-level.alert-success .alert-action.btn:focus, .alert-app-level.alert-success .alert-action.btn:hover, .alert-app-level.alert-success .alert-action.btn:active,
+        .alert-app-level.alert-success .dropdown-toggle.btn:focus,
+        .alert-app-level.alert-success .dropdown-toggle.btn:hover,
+        .alert-app-level.alert-success .dropdown-toggle.btn:active {
+          border-color: #000; }
+        .alert-app-level.alert-success .alert-action.btn:active,
+        .alert-app-level.alert-success .dropdown-toggle.btn:active {
+          box-shadow: 0 1px 0 0 #000 inset; }
       .alert-app-level.alert-success .alert-action:focus, .alert-app-level.alert-success .alert-action:hover, .alert-app-level.alert-success .alert-action:active,
       .alert-app-level.alert-success .dropdown-toggle:focus,
       .alert-app-level.alert-success .dropdown-toggle:hover,
       .alert-app-level.alert-success .dropdown-toggle:active {
-        color: #000;
-        border-color: #000; }
-      .alert-app-level.alert-success .alert-action:active,
-      .alert-app-level.alert-success .dropdown-toggle:active {
-        box-shadow: 0 1px 0 0 #000 inset; }
+        color: #000; }
     .alert-app-level.alert-success .close {
       color: #000;
       opacity: 0.8; }
@@ -3664,8 +3720,8 @@ code.clr-code {
     text-decoration: none; }
 
 .alert-sm {
-  letter-spacing: normal;
   font-size: calc(0.5rem - 1px);
+  letter-spacing: normal;
   line-height: 0.666667rem; }
   .alert-sm .alert-items {
     padding: calc(0.166667rem - 1px) calc(0.25rem - 1px); }
@@ -3738,10 +3794,10 @@ code.clr-code {
   background: #1d5100; }
 
 .alerts-pager {
-  color: #000;
-  float: left;
+  color: #fff;
   font-size: 0.541667rem;
   letter-spacing: normal;
+  float: left;
   min-height: 1.5rem;
   text-align: center;
   width: 144px; }
@@ -3827,7 +3883,7 @@ code.clr-code {
   .card > .list-unstyled {
     padding: 0.5rem 0.75rem; }
   .card .list-group-item {
-    font-size: clr-getTypePropertyValueForDomElement(card_text, font-size);
+    font-size: 0.583333rem;
     background-color: #22343c;
     border-left-width: 0;
     border-right-width: 0;
@@ -3853,7 +3909,7 @@ code.clr-code {
   letter-spacing: normal; }
 
 .card-text {
-  font-size: clr-getTypePropertyValueForDomElement(card_text, font-size); }
+  font-size: 0.583333rem; }
 
 .card-img:first-child > img {
   border-radius: 0.125rem 0.125rem 0 0; }
@@ -4041,13 +4097,13 @@ code.clr-code {
   visibility: hidden;
   z-index: 1000; }
   .dropdown-menu .dropdown-header {
+    color: #adbbc4;
     font-size: 0.5rem;
     font-weight: 600;
     letter-spacing: normal;
     padding: 0 0.5rem;
     line-height: 0.75rem;
-    margin: 0;
-    color: #adbbc4; }
+    margin: 0; }
   .dropdown-menu .btn,
   .dropdown-menu .btn-secondary,
   .dropdown-menu .btn-info,
@@ -4063,12 +4119,12 @@ code.clr-code {
   .dropdown-menu .btn-success,
   .dropdown-menu .btn-link,
   .dropdown-menu .dropdown-item {
+    color: #adbbc4;
     font-size: 0.583333rem;
-    letter-spacing: normal;
     font-weight: 400;
+    letter-spacing: normal;
     background: transparent;
     border: 0;
-    color: #adbbc4;
     cursor: pointer;
     display: block;
     height: auto;
@@ -4322,7 +4378,7 @@ code.clr-code {
         background-repeat: no-repeat;
         background-size: contain;
         vertical-align: middle;
-        margin-top: 0.375rem; }
+        margin-top: 0.25rem; }
   .dropdown-menu .btn,
   .dropdown-menu .dropdown-item {
     padding: 0.125rem 1rem; }
@@ -4330,10 +4386,6 @@ code.clr-code {
       .dropdown-menu .btn,
       .dropdown-menu .dropdown-item {
         padding: 0.25rem 1rem; } }
-  @media screen and (max-width: 576px) {
-    .dropdown-menu .btn.expandable::before,
-    .dropdown-menu .dropdown-item.expandable::before {
-      margin-top: 0.5rem; } }
   .dropdown-menu .dropdown-divider {
     border-bottom: 1px solid #000;
     margin: 0.25rem 0; }
@@ -5854,11 +5906,11 @@ header,
       margin-right: 0.375rem; }
     header .branding .title,
     .header .branding .title {
+      color: #fafafa;
       font-size: 0.666667rem;
       font-weight: 400;
       font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
       letter-spacing: 0.01em;
-      color: #fafafa;
       line-height: 2.5rem;
       text-decoration: none; }
   header .header-nav,
@@ -6330,14 +6382,14 @@ header,
       color: #fff;
       box-shadow: 0 -1px 0 #485764 inset; }
   .nav .nav-link {
+    color: #adbbc4;
     font-size: 0.583333rem;
     font-weight: 400;
     letter-spacing: normal;
+    line-height: 1.5rem;
     display: inline-block;
-    color: #adbbc4;
     padding: 0 0.125rem;
-    box-shadow: none;
-    line-height: 1.5rem; }
+    box-shadow: none; }
     .nav .nav-link.btn {
       text-transform: none;
       margin: 0;
@@ -6351,7 +6403,8 @@ header,
     .nav .nav-link:hover, .nav .nav-link:focus, .nav .nav-link:active, .nav .nav-link.active {
       text-decoration: none; }
     .nav .nav-link.active {
-      color: #fff; }
+      color: #fff;
+      font-weight: 400; }
     .nav .nav-link.nav-item {
       margin-right: 1rem; }
 
@@ -6409,14 +6462,14 @@ header,
       text-decoration: none;
       width: 100%; }
     .sidenav .sidenav-content > .nav-link {
+      margin: 1rem 0 0 1.25rem;
+      padding-left: 0.5rem;
       color: #adbbc4;
       font-size: 0.583333rem;
       font-weight: 500;
       line-height: 1rem;
       font-family: Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-      letter-spacing: normal;
-      margin: 1rem 0 0 1.25rem;
-      padding-left: 0.5rem; }
+      letter-spacing: normal; }
       .sidenav .sidenav-content > .nav-link:hover {
         background: #324f61; }
       .sidenav .sidenav-content > .nav-link.active {
@@ -7707,12 +7760,12 @@ _:-ms-input-placeholder .progress-block > label,
   .tooltip > .tooltip-content,
   .tooltip.tooltip-top-right > .tooltip-content,
   .tooltip .tooltip-content.tooltip-top-right {
+    color: #fff;
     font-size: 0.541667rem;
     font-weight: 400;
     letter-spacing: normal;
     background: #fff;
     border-radius: 0.125rem;
-    color: #000;
     line-height: 0.75rem;
     margin: 0;
     padding: 0.375rem 0.5rem;
@@ -7739,12 +7792,12 @@ _:-ms-input-placeholder .progress-block > label,
       border-bottom: 0.208333rem solid transparent; }
   .tooltip.tooltip-top-left > .tooltip-content,
   .tooltip .tooltip-content.tooltip-top-left {
+    color: #fff;
     font-size: 0.541667rem;
     font-weight: 400;
     letter-spacing: normal;
     background: #fff;
     border-radius: 0.125rem;
-    color: #000;
     line-height: 0.75rem;
     margin: 0;
     padding: 0.375rem 0.5rem;
@@ -7770,12 +7823,12 @@ _:-ms-input-placeholder .progress-block > label,
       border-bottom: 0.208333rem solid transparent; }
   .tooltip.tooltip-bottom-right > .tooltip-content,
   .tooltip .tooltip-content.tooltip-bottom-right {
+    color: #fff;
     font-size: 0.541667rem;
     font-weight: 400;
     letter-spacing: normal;
     background: #fff;
     border-radius: 0.125rem;
-    color: #000;
     line-height: 0.75rem;
     margin: 0;
     padding: 0.375rem 0.5rem;
@@ -7801,12 +7854,12 @@ _:-ms-input-placeholder .progress-block > label,
       border-top: 0.208333rem solid transparent; }
   .tooltip.tooltip-bottom-left > .tooltip-content,
   .tooltip .tooltip-content.tooltip-bottom-left {
+    color: #fff;
     font-size: 0.541667rem;
     font-weight: 400;
     letter-spacing: normal;
     background: #fff;
     border-radius: 0.125rem;
-    color: #000;
     line-height: 0.75rem;
     margin: 0;
     padding: 0.375rem 0.5rem;
@@ -7837,12 +7890,12 @@ _:-ms-input-placeholder .progress-block > label,
     left: 100%;
     top: 50%;
     bottom: auto;
+    color: #fff;
     font-size: 0.541667rem;
     font-weight: 400;
     letter-spacing: normal;
     background: #fff;
     border-radius: 0.125rem;
-    color: #000;
     line-height: 0.75rem;
     margin: 0;
     padding: 0.375rem 0.5rem;
@@ -7868,12 +7921,12 @@ _:-ms-input-placeholder .progress-block > label,
     right: 100%;
     top: 50%;
     bottom: auto;
+    color: #fff;
     font-size: 0.541667rem;
     font-weight: 400;
     letter-spacing: normal;
     background: #fff;
     border-radius: 0.125rem;
-    color: #000;
     line-height: 0.75rem;
     margin: 0;
     padding: 0.375rem 0.5rem;
@@ -8100,8 +8153,7 @@ _:-ms-input-placeholder .progress-block > label,
     border-bottom: 0.08333338rem solid #000;
     top: 0.1666665rem;
     left: 0.16666675rem;
-    transform: translate(0, 0.16666675rem) rotate(-45deg);
-    border-color: #000; }
+    transform: translate(0, 0.16666675rem) rotate(-45deg); }
   .clr-checkbox-wrapper input[type='checkbox']:checked + label::before {
     background: #49afd9;
     border: none; }
@@ -8215,7 +8267,7 @@ _:-ms-input-placeholder .progress-block > label,
   box-shadow: none;
   background: none;
   height: 1rem;
-  color: #e9ecef;
+  color: #e9ecef !important;
   display: inline-block;
   border-bottom: 1px solid #adbbc4;
   padding: 0 0.25rem;
@@ -8257,7 +8309,7 @@ _:-ms-input-placeholder .progress-block > label,
   max-width: calc(100% + 1rem); }
 
 .clr-input-group {
-  color: #e9ecef;
+  color: #e9ecef !important;
   display: inline-block;
   border-bottom: 1px solid #adbbc4;
   background: linear-gradient(to bottom, transparent 95%, #49afd9 95%) no-repeat;
@@ -8403,7 +8455,7 @@ _:-ms-input-placeholder .progress-block > label,
     box-shadow: none;
     background: none;
     height: 1rem;
-    color: #e9ecef;
+    color: #e9ecef !important;
     display: inline-block;
     border-bottom: 1px solid #adbbc4;
     background: linear-gradient(to bottom, transparent 95%, #49afd9 95%) no-repeat;
@@ -9237,10 +9289,10 @@ form,
     margin: 0.5rem 0 1.5rem 0; }
     form .form-block > label,
     .form .form-block > label {
-      font-size: 0.666667rem;
-      letter-spacing: 0.01em;
-      font-weight: 400;
       color: #fff;
+      font-size: 0.666667rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
       margin-bottom: 0.25rem; }
   form .form-group,
   .form .form-group {
@@ -9252,8 +9304,8 @@ form,
     padding-left: 9.5rem;
     margin-bottom: 0.5rem;
     font-size: 0.541667rem;
-    letter-spacing: normal;
-    line-height: 1rem; }
+    font-weight: 400;
+    letter-spacing: normal; }
     form .form-group.row,
     .form .form-group.row {
       padding-left: 0;
@@ -9481,6 +9533,7 @@ form,
 
 .tooltip.tooltip-validation.invalid > input:focus + .tooltip-content {
   background: #f54f47;
+  color: #000;
   visibility: visible;
   opacity: 1; }
 
@@ -9595,10 +9648,10 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
   padding: 0 1rem 0 0.25rem;
   min-height: 1rem;
   width: 5rem;
-  color: #e9ecef;
+  font-size: 0.541667rem;
+  color: #e9ecef !important;
   display: inline-block;
   border-bottom: 1px solid #adbbc4;
-  font-size: 0.541667rem;
   background: linear-gradient(to bottom, transparent 95%, #49afd9 95%) no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.2s ease;
@@ -9640,12 +9693,12 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
   visibility: visible; }
 
 .clr-option {
+  color: #adbbc4;
   font-size: 0.583333rem;
-  letter-spacing: normal;
   font-weight: 400;
+  letter-spacing: normal;
   background: transparent;
   border: 0;
-  color: #adbbc4;
   cursor: pointer;
   display: block;
   height: auto;
@@ -9687,7 +9740,7 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
   background: none; }
 
 .stack-header {
-  font-weight: clr-getTypePropertyValueForDomElement(stackview_text, font-weight);
+  font-weight: 400;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: end;
@@ -9762,11 +9815,11 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
     padding: 0.25rem 0.5rem;
     background-color: #1b2a32; }
   .stack-view .stack-block-label {
+    color: #929ba5;
     font-size: 0.541667rem;
     font-weight: 500;
     line-height: 1rem;
     letter-spacing: normal;
-    color: #929ba5;
     -ms-flex: 0 0 40%;
     flex: 0 0 40%;
     max-width: 40%; }
@@ -9789,7 +9842,7 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
     flex: 1 1 auto;
     width: 60%;
     margin-bottom: 0;
-    font-weight: clr-getTypePropertyValueForDomElement(stackview_text, font-weight); }
+    font-weight: 400; }
     .stack-view .stack-block-content > :first-child {
       margin-top: 0; }
     .stack-view .stack-block-content > :last-child {
@@ -10131,7 +10184,6 @@ _:-ms-input-placeholder .clr-treenode-content .label,
       letter-spacing: normal;
       background: transparent;
       border: 0;
-      color: #e9ecef;
       cursor: pointer;
       display: block;
       line-height: calc(1rem - 0.04166667rem);
@@ -10485,7 +10537,6 @@ _:-ms-input-placeholder .clr-treenode-content .label,
       -ms-flex-align: center;
       align-items: center;
       -ms-flex-pack: center;
-      justify-content: center;
       justify-content: center;
       font-size: 0.666667rem;
       color: #9a9a9a; }
