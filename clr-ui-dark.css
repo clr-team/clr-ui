@@ -8787,6 +8787,9 @@ _:-ms-input-placeholder .progress-block > label,
 .clr-error .clr-checkbox-wrapper input[type='checkbox'] + label::before {
   border-color: #f54f47; }
 
+.clr-form-control-disabled .clr-checkbox-wrapper label {
+  cursor: not-allowed; }
+
 .clr-form-control-disabled .clr-checkbox-wrapper input[type='checkbox'] + label::before,
 .clr-form-control-disabled .clr-checkbox-wrapper input[type='checkbox']:checked + label::before {
   background-color: #8f9ba3;
@@ -9032,6 +9035,9 @@ _:-ms-input-placeholder .progress-block > label,
     background-color: #000;
     -webkit-box-shadow: inset 0 0 0 0.25rem #49afd9;
     box-shadow: inset 0 0 0 0.25rem #49afd9; }
+
+.clr-form-control-disabled .clr-radio-wrapper label {
+  cursor: not-allowed; }
 
 .clr-error .clr-radio-wrapper input[type='radio'] + label::before {
   border-color: #f54f47; }
