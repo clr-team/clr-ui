@@ -10661,9 +10661,9 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
   -ms-flex-align: center;
   align-items: center;
   border-radius: 0.125rem 0 0 0.125rem;
-  line-height: 1.25rem; }
+  line-height: 1.35rem; }
   .clr-treenode-content:first-child {
-    padding-left: 1.25rem; }
+    padding-left: 1.35rem; }
   .clr-treenode-content clr-icon,
   .clr-treenode-content .clr-icon {
     height: 0.666667rem;
@@ -10673,12 +10673,12 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
 
 .clr-treenode-caret {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 1.25rem;
-  flex: 0 0 1.25rem;
+  -ms-flex: 0 0 1.35rem;
+  flex: 0 0 1.35rem;
   padding: 0;
   margin: 0;
-  height: 1.25rem;
-  width: 1.25rem;
+  height: 1.35rem;
+  width: 1.35rem;
   background: none;
   border: none;
   color: #adbbc4;
@@ -10693,9 +10693,9 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
   vertical-align: middle; }
 
 .clr-treenode-spinner-container {
-  height: 1.25rem;
-  width: 1.25rem;
-  padding: 0.2916665rem; }
+  height: 1.35rem;
+  width: 1.35rem;
+  padding: 0.3416665rem; }
 
 .clr-treenode-spinner {
   min-height: 0.666667rem;
@@ -10704,7 +10704,7 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
   width: 0.666667rem; }
 
 .clr-treenode-children {
-  margin-left: 0.87499983rem; }
+  margin-left: 0.97499983rem; }
 
 .clr-treenode-link {
   display: inline-block;
@@ -10713,8 +10713,7 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
   padding: 0 0 0 0.25rem;
   width: 100%;
   background: transparent;
-  border-radius: 0.125rem 0 0 0.125rem;
-  border-color: transparent;
+  border: 0;
   color: #adbbc4;
   cursor: pointer;
   line-height: inherit;
@@ -10731,13 +10730,13 @@ _:-ms-input-placeholder input[type=text], _:-ms-input-placeholder input[type=pas
     color: #fff; }
 
 .clr-tree-node-content-container > .clr-checkbox-wrapper {
-  height: 1.25rem;
-  width: 1.25rem;
-  padding-top: 0.125rem;
-  padding-left: 0.2916665rem; }
+  height: 1.35rem;
+  width: 1.35rem;
+  padding-top: 0.175rem;
+  padding-left: 0.3416665rem; }
 
 .clr-tree-node-content-container > .clr-checkbox-wrapper:first-child {
-  margin-left: 1.25rem; }
+  margin-left: 1.35rem; }
 
 .clr-treenode-content .label {
   margin-left: 0.25rem; }
