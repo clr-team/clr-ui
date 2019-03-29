@@ -7841,10 +7841,10 @@ header,
     display: -ms-flexbox;
     display: flex;
     width: 100%; }
-    .progress-block > .progress-group .row {
+    .progress-block > .progress-group .clr-row {
       margin-left: 0;
       margin-right: 0; }
-      .progress-block > .progress-group .row > [class*='col-'] {
+      .progress-block > .progress-group .clr-row > [class*='clr-col-'] {
         padding-left: 0;
         padding-right: 0; }
 
