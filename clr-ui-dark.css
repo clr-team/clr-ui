@@ -11787,6 +11787,9 @@ button.nav-link {
   .tabs-overflow .nav-item {
     margin-right: 0; }
 
+.tab-content {
+  display: inline; }
+
 .tabs-vertical {
   display: -webkit-box;
   display: -ms-flexbox;
