@@ -2858,6 +2858,7 @@ button.close {
     -moz-column-gap: 0.5rem;
     column-gap: 0.5rem;
     -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
     break-inside: avoid;
     -webkit-column-fill: balance;
     -moz-column-fill: balance;
