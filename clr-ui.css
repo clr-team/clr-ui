@@ -10997,6 +10997,7 @@ _:-ms-input-placeholder .clr-treenode-content .label,
   margin: 0 0.25rem;
   background-repeat: no-repeat;
   background-size: contain;
+  color: #9a9a9a;
 }
 .datagrid-table .datagrid-column .datagrid-filter-toggle:hover {
   color: #0079b8;
