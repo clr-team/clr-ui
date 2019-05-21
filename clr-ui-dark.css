@@ -3944,35 +3944,35 @@ button.close {
   width: 100%;
   text-transform: none;
 }
-.dropdown-menu .btn:hover, .dropdown-menu .btn:focus,
+.dropdown-menu .btn:hover, .dropdown-menu .btn.clr-focus,
 .dropdown-menu .btn-secondary:hover,
-.dropdown-menu .btn-secondary:focus,
+.dropdown-menu .btn-secondary.clr-focus,
 .dropdown-menu .btn-info:hover,
-.dropdown-menu .btn-info:focus,
+.dropdown-menu .btn-info.clr-focus,
 .dropdown-menu .btn-outline:hover,
-.dropdown-menu .btn-outline:focus,
+.dropdown-menu .btn-outline.clr-focus,
 .dropdown-menu .btn-outline-primary:hover,
-.dropdown-menu .btn-outline-primary:focus,
+.dropdown-menu .btn-outline-primary.clr-focus,
 .dropdown-menu .btn-outline-secondary:hover,
-.dropdown-menu .btn-outline-secondary:focus,
+.dropdown-menu .btn-outline-secondary.clr-focus,
 .dropdown-menu .btn-outline-warning:hover,
-.dropdown-menu .btn-outline-warning:focus,
+.dropdown-menu .btn-outline-warning.clr-focus,
 .dropdown-menu .btn-outline-danger:hover,
-.dropdown-menu .btn-outline-danger:focus,
+.dropdown-menu .btn-outline-danger.clr-focus,
 .dropdown-menu .btn-outline-success:hover,
-.dropdown-menu .btn-outline-success:focus,
+.dropdown-menu .btn-outline-success.clr-focus,
 .dropdown-menu .btn-danger:hover,
-.dropdown-menu .btn-danger:focus,
+.dropdown-menu .btn-danger.clr-focus,
 .dropdown-menu .btn-primary:hover,
-.dropdown-menu .btn-primary:focus,
+.dropdown-menu .btn-primary.clr-focus,
 .dropdown-menu .btn-warning:hover,
-.dropdown-menu .btn-warning:focus,
+.dropdown-menu .btn-warning.clr-focus,
 .dropdown-menu .btn-success:hover,
-.dropdown-menu .btn-success:focus,
+.dropdown-menu .btn-success.clr-focus,
 .dropdown-menu .btn-link:hover,
-.dropdown-menu .btn-link:focus,
+.dropdown-menu .btn-link.clr-focus,
 .dropdown-menu .dropdown-item:hover,
-.dropdown-menu .dropdown-item:focus {
+.dropdown-menu .dropdown-item.clr-focus {
   background-color: #29414e;
   color: #adbbc4;
   text-decoration: none;
@@ -4097,63 +4097,63 @@ button.close {
 .dropdown-menu .dropdown-item:disabled:hover {
   background: none;
 }
-.dropdown-menu .btn.disabled:active, .dropdown-menu .btn.disabled:focus, .dropdown-menu .btn:disabled:active, .dropdown-menu .btn:disabled:focus,
+.dropdown-menu .btn.disabled:active, .dropdown-menu .btn.disabled.clr-focus, .dropdown-menu .btn:disabled:active, .dropdown-menu .btn:disabled.clr-focus,
 .dropdown-menu .btn-secondary.disabled:active,
-.dropdown-menu .btn-secondary.disabled:focus,
+.dropdown-menu .btn-secondary.disabled.clr-focus,
 .dropdown-menu .btn-secondary:disabled:active,
-.dropdown-menu .btn-secondary:disabled:focus,
+.dropdown-menu .btn-secondary:disabled.clr-focus,
 .dropdown-menu .btn-info.disabled:active,
-.dropdown-menu .btn-info.disabled:focus,
+.dropdown-menu .btn-info.disabled.clr-focus,
 .dropdown-menu .btn-info:disabled:active,
-.dropdown-menu .btn-info:disabled:focus,
+.dropdown-menu .btn-info:disabled.clr-focus,
 .dropdown-menu .btn-outline.disabled:active,
-.dropdown-menu .btn-outline.disabled:focus,
+.dropdown-menu .btn-outline.disabled.clr-focus,
 .dropdown-menu .btn-outline:disabled:active,
-.dropdown-menu .btn-outline:disabled:focus,
+.dropdown-menu .btn-outline:disabled.clr-focus,
 .dropdown-menu .btn-outline-primary.disabled:active,
-.dropdown-menu .btn-outline-primary.disabled:focus,
+.dropdown-menu .btn-outline-primary.disabled.clr-focus,
 .dropdown-menu .btn-outline-primary:disabled:active,
-.dropdown-menu .btn-outline-primary:disabled:focus,
+.dropdown-menu .btn-outline-primary:disabled.clr-focus,
 .dropdown-menu .btn-outline-secondary.disabled:active,
-.dropdown-menu .btn-outline-secondary.disabled:focus,
+.dropdown-menu .btn-outline-secondary.disabled.clr-focus,
 .dropdown-menu .btn-outline-secondary:disabled:active,
-.dropdown-menu .btn-outline-secondary:disabled:focus,
+.dropdown-menu .btn-outline-secondary:disabled.clr-focus,
 .dropdown-menu .btn-outline-warning.disabled:active,
-.dropdown-menu .btn-outline-warning.disabled:focus,
+.dropdown-menu .btn-outline-warning.disabled.clr-focus,
 .dropdown-menu .btn-outline-warning:disabled:active,
-.dropdown-menu .btn-outline-warning:disabled:focus,
+.dropdown-menu .btn-outline-warning:disabled.clr-focus,
 .dropdown-menu .btn-outline-danger.disabled:active,
-.dropdown-menu .btn-outline-danger.disabled:focus,
+.dropdown-menu .btn-outline-danger.disabled.clr-focus,
 .dropdown-menu .btn-outline-danger:disabled:active,
-.dropdown-menu .btn-outline-danger:disabled:focus,
+.dropdown-menu .btn-outline-danger:disabled.clr-focus,
 .dropdown-menu .btn-outline-success.disabled:active,
-.dropdown-menu .btn-outline-success.disabled:focus,
+.dropdown-menu .btn-outline-success.disabled.clr-focus,
 .dropdown-menu .btn-outline-success:disabled:active,
-.dropdown-menu .btn-outline-success:disabled:focus,
+.dropdown-menu .btn-outline-success:disabled.clr-focus,
 .dropdown-menu .btn-danger.disabled:active,
-.dropdown-menu .btn-danger.disabled:focus,
+.dropdown-menu .btn-danger.disabled.clr-focus,
 .dropdown-menu .btn-danger:disabled:active,
-.dropdown-menu .btn-danger:disabled:focus,
+.dropdown-menu .btn-danger:disabled.clr-focus,
 .dropdown-menu .btn-primary.disabled:active,
-.dropdown-menu .btn-primary.disabled:focus,
+.dropdown-menu .btn-primary.disabled.clr-focus,
 .dropdown-menu .btn-primary:disabled:active,
-.dropdown-menu .btn-primary:disabled:focus,
+.dropdown-menu .btn-primary:disabled.clr-focus,
 .dropdown-menu .btn-warning.disabled:active,
-.dropdown-menu .btn-warning.disabled:focus,
+.dropdown-menu .btn-warning.disabled.clr-focus,
 .dropdown-menu .btn-warning:disabled:active,
-.dropdown-menu .btn-warning:disabled:focus,
+.dropdown-menu .btn-warning:disabled.clr-focus,
 .dropdown-menu .btn-success.disabled:active,
-.dropdown-menu .btn-success.disabled:focus,
+.dropdown-menu .btn-success.disabled.clr-focus,
 .dropdown-menu .btn-success:disabled:active,
-.dropdown-menu .btn-success:disabled:focus,
+.dropdown-menu .btn-success:disabled.clr-focus,
 .dropdown-menu .btn-link.disabled:active,
-.dropdown-menu .btn-link.disabled:focus,
+.dropdown-menu .btn-link.disabled.clr-focus,
 .dropdown-menu .btn-link:disabled:active,
-.dropdown-menu .btn-link:disabled:focus,
+.dropdown-menu .btn-link:disabled.clr-focus,
 .dropdown-menu .dropdown-item.disabled:active,
-.dropdown-menu .dropdown-item.disabled:focus,
+.dropdown-menu .dropdown-item.disabled.clr-focus,
 .dropdown-menu .dropdown-item:disabled:active,
-.dropdown-menu .dropdown-item:disabled:focus {
+.dropdown-menu .dropdown-item:disabled.clr-focus {
   background: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -10369,7 +10369,7 @@ select[size] option {
   width: 100%;
   text-transform: none;
 }
-.clr-option:hover, .clr-option:focus {
+.clr-option:hover, .clr-option.clr-focus {
   background-color: #29414e;
   color: #adbbc4;
   text-decoration: none;
@@ -10396,7 +10396,7 @@ select[size] option {
 .clr-option.disabled:hover, .clr-option:disabled:hover {
   background: none;
 }
-.clr-option.disabled:active, .clr-option.disabled:focus, .clr-option:disabled:active, .clr-option:disabled:focus {
+.clr-option.disabled:active, .clr-option.disabled.clr-focus, .clr-option:disabled:active, .clr-option:disabled.clr-focus {
   background: none;
   -webkit-box-shadow: none;
   box-shadow: none;
